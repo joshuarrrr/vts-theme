@@ -1,0 +1,5268 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 11, ../../app/assets/stylesheets/horse/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 21, ../../app/assets/stylesheets/horse/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 34, ../../app/assets/stylesheets/horse/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, ../../app/assets/stylesheets/horse/_normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, ../../app/assets/stylesheets/horse/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, ../../app/assets/stylesheets/horse/_normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, ../../app/assets/stylesheets/horse/_normalize.scss */
+a {
+  background: transparent;
+  cursor: pointer;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 98, ../../app/assets/stylesheets/horse/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 110, ../../app/assets/stylesheets/horse/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 118, ../../app/assets/stylesheets/horse/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 127, ../../app/assets/stylesheets/horse/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 136, ../../app/assets/stylesheets/horse/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 145, ../../app/assets/stylesheets/horse/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 154, ../../app/assets/stylesheets/horse/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 162, ../../app/assets/stylesheets/horse/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 170, ../../app/assets/stylesheets/horse/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 174, ../../app/assets/stylesheets/horse/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 185, ../../app/assets/stylesheets/horse/_normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 193, ../../app/assets/stylesheets/horse/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 204, ../../app/assets/stylesheets/horse/_normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 212, ../../app/assets/stylesheets/horse/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 222, ../../app/assets/stylesheets/horse/_normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 230, ../../app/assets/stylesheets/horse/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 253, ../../app/assets/stylesheets/horse/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 267, ../../app/assets/stylesheets/horse/_normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 278, ../../app/assets/stylesheets/horse/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 291, ../../app/assets/stylesheets/horse/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 303, ../../app/assets/stylesheets/horse/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 312, ../../app/assets/stylesheets/horse/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 323, ../../app/assets/stylesheets/horse/_normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 335, ../../app/assets/stylesheets/horse/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 347, ../../app/assets/stylesheets/horse/_normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 358, ../../app/assets/stylesheets/horse/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 371, ../../app/assets/stylesheets/horse/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 380, ../../app/assets/stylesheets/horse/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 391, ../../app/assets/stylesheets/horse/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 400, ../../app/assets/stylesheets/horse/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 409, ../../app/assets/stylesheets/horse/_normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 420, ../../app/assets/stylesheets/horse/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 425, ../../app/assets/stylesheets/horse/_normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-thin-webfont-c62ef21d30d5755918a5ee573a1e63a8.eot);
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-thin-webfont.eot?#iefix) format("embedded-opentype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-thin-webfont-097f0d9ce98e79d178b813704018397b.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-thin-webfont-6408ae551bab9c137b4c4cbd0ea22ca3.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-thin-webfont-4ab8349c9a6388553d8ece24fa3f1f6c.ttf) format("truetype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-thin-webfont.svg#robotothin) format("svg");
+//   font-weight: 100;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-light-webfont-e535547a8cd625a90243d1fdf9ea2864.eot);
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-light-webfont.eot?#iefix) format("embedded-opentype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-light-webfont-0042c0e008fac529a0c458cd2a3891c2.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-light-webfont-7ebbe6628cedbbebb7d36c5e70512444.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-light-webfont-381bcff6779f66b3e0d0c2bf87760fbb.ttf) format("truetype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-light-webfont.svg#robotolight) format("svg");
+//   font-weight: 300;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-regular-webfont-fa2b68e853195efd7fd8f5a2d6664a9f.eot);
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-regular-webfont.eot?#iefix) format("embedded-opentype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-regular-webfont-b2af4c77570ce9b603cdb13297657dff.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-regular-webfont-7cb3ba6e35f4b9f4cdfd04a126a20c06.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-regular-webfont-ca40b0c709d8e0c55aebea15ee043562.ttf) format("truetype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-regular-webfont.svg#robotoregular) format("svg");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-bold-webfont-da66c05b783dde29b358ba010f62320d.eot);
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-bold-webfont.eot?#iefix) format("embedded-opentype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-bold-webfont-54e545a5d0c9729f32ca23e7c01d72d9.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-bold-webfont-22c74f3d4f9a8edd4bec7c83539a19d3.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-bold-webfont-3a7d40eac7dde623ae3422933d24fa5c.ttf) format("truetype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-bold-webfont.svg#robotobold) format("svg");
+//   font-weight: 700;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-black-webfont-ac90004d7ab3321660c763d219275862.eot);
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-black-webfont.eot?#iefix) format("embedded-opentype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-black-webfont-010947196b20112b0a77dc1fcf53ecc2.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-black-webfont-598cda8af8943d3c014d4aea42302b09.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-black-webfont-df89b0210e7eb29b2da002a171f9811c.ttf) format("truetype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-black-webfont.svg#robotoblack) format("svg");
+//   font-weight: 900;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'Roboto';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-medium-webfont-44e96e7ff226429372078e27a6e447a2.eot);
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-medium-webfont.eot?#iefix) format("embedded-opentype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-medium-webfont-789e3f8ad2d3d6ef090a1aa156e6732f.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-medium-webfont-0e4d377dbcf5f51ca58f0c1453a381ee.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-medium-webfont-4f3bb51c7d1cdc0ff09063123a5d123f.ttf) format("truetype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/roboto/roboto-medium-webfont.svg#robotomedium) format("svg");
+//   font-weight: 500;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'PfDinTextCondPro';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-regular-dbda43d587e49f4c379dc91035df18bf.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-regular-6ccb60b78effff1ef3e51752157659e7.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-regular-865126550db0a0b203cffe3e7f0bb03a.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-regular.svg#PfDinTextCondPro) format("svg"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-regular-8f5b318b2d84f1207b35766e838e1abe.eot) format("eot");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'PfDinTextCondPro';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-italic-ab90bfe6053d291bf65923d1f0764a21.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-italic-155810550b1b769c4498a08d5f166ae7.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-italic-e11d149f740fb5351fd6b04110541733.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-italic.svg#PfDinTextCondPro) format("svg"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-italic-9bf1b4ecd7499b045fe51c74db83b464.eot) format("eot");
+//   font-weight: 400;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'PfDinTextCondPro';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-medium-c2583b89adbad8ab6ba5918062f8752c.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-medium-25b4fdcb953ba26d42cabbffeb5fc172.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-medium-2e6ec385437f3bf1b814eb8489fc2ca2.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-medium.svg#PfDinTextCondPro) format("svg"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-medium-c7b735d1c13f26276abcd1e22b0b2e11.eot) format("eot");
+//   font-weight: 500;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'PfDinTextCondPro';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-medium-italic-07c5d35329013a0cb2378a85731819ae.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-medium-italic-e5ab3373f98337c352cef79aa55e9db3.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-medium-italic-04a319baf262a3b20211990c768e72a9.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-medium-italic.svg#PfDinTextCondPro) format("svg"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-medium-italic-8be1e9d6731ddcf149c349b29aab5822.eot) format("eot");
+//   font-weight: 500;
+//   font-style: italic;
+// }
+// @font-face {
+//   font-family: 'PfDinTextCondPro';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-bold-5bccd442d6c9cc4eba57b068ea84ab8d.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-bold-5d355c9c89aa195225d33be7e3cf5893.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-bold-8b7c237b3bd8495912eeba92f51177e9.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-bold.svg#PfDinTextCondPro) format("svg"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-bold-0963fbe7ddf1716350de1d76265cb918.eot) format("eot");
+//   font-weight: 700;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'PfDinTextCondPro';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-light-eaddaa3274adc6cab120989c946a9131.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-light-8ebff3e05f10776dd4ce6cea88e2cb71.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-light-300de6eb3758baa014194d355308b583.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-light.svg#PfDinTextCondPro) format("svg") url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-light-177fb7ae715b6694acab0a0b40159543.eot) format("eot");
+//   font-weight: 300;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'PfDinTextCondPro';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-thin-7f9ddd658d8e9ef51b53570f3d165d65.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-thin-72df95711b810f473152595ecdbc35b8.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-thin-7dae44d217fc66a010f2a49f2952cf76.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-thin.svg#PfDinTextCondPro) format("svg"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/pfdintextcondpro/pfdintextcondpro-thin.eot?#iefix) format("eot");
+//   font-weight: 100;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: 'DinAlternate';
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/dinalternate/dinalternate-bold-caff294ed85803a7881425ac2e1af1bb.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/dinalternate/dinalternate-bold-bda331444e978c8f9f61c33f2bd1d22a.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/dinalternate/dinalternate-bold-edd03aadf3f33dc7813c0370ec8faf95.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/dinalternate/dinalternate-bold.svg#din_alternatebold) format("svg"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/dinalternate/dinalternate-bold.eot?#iefix) format("eot");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "vts-icons";
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-thin-33337a8ce5b556b81da33370a2314175.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-thin-ef5bd8958826d6b851db166f0d1bff52.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-thin-3caeffe476369b3b5d7f2b6b540cf5dc.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-thin.svg#vts) format("svg"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-thin.eot#iefix) format("embedded-opentype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-thin-d1ee400e3c1c0c13d1a25d48f6745fb3.eot) format("eot");
+//   font-weight: 100;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "vts-icons";
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-regular-d04935998d3cc1753000d2107e7d0615.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-regular-5f6de52a9dc92a67b7ccd219c34412e2.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-regular-d7266db4e2d152d1ce4039d44f58343e.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-regular.svg#vts) format("svg"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-regular.eot#iefix) format("embedded-opentype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-regular-36ff387f4f4a9fae35cefc9e4994ab8a.eot) format("eot");
+//   font-weight: 400;
+//   font-style: normal;
+// }
+// @font-face {
+//   font-family: "vts-icons";
+//   src: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-bold-f47e88a8204d156ae6fd83cda3d3490b.woff) format("woff"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-bold-8de6023e20500b928902a23e1af58123.woff2) format("woff2"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-bold-d3c6ed7d6805f59d2c4089c866d09306.ttf) format("ttf"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-bold.svg#vts) format("svg"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-bold.eot#iefix) format("embedded-opentype"), url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/vts-icons/vts-bold-b132a9e46721e4a20d04326f86aa2630.eot) format("eot");
+//   font-weight: 700;
+//   font-style: normal;
+// }
+/* line 5, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.default-icon {
+  font-size: 18px;
+}
+
+/* line 9, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.closedatepicker-icon {
+  cursor: pointer;
+  color: #7B90AB;
+  font-size: 10px;
+  position: relative;
+  right: 5px;
+  font-weight: 700;
+}
+
+/* line 36, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "vts-icons" !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 48, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-users:before {
+  content: "\EEE2";
+}
+
+/* line 49, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-user:before {
+  content: "\EEE0";
+}
+
+/* line 50, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-trash:before {
+  content: "\EEF6";
+}
+
+/* line 51, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-stack:before {
+  content: "\EF0A";
+}
+
+/* line 52, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-spaces:before {
+  content: "\EF2F";
+}
+
+/* line 53, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-info:before {
+  content: "\EEE4";
+}
+
+/* line 54, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-log:before {
+  content: "\EEF2";
+}
+
+/* line 55, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-plus-v2:before {
+  content: "\EEF2";
+}
+
+/* line 56, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-mag:before {
+  content: "\EEF0";
+}
+
+/* line 57, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-mag-plus:before {
+  content: "\EEF1";
+}
+
+/* line 58, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-mail:before {
+  content: "\EF03";
+}
+
+/* line 59, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-menu-vertical:before {
+  content: "\EF13";
+}
+
+/* line 60, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-menu-v1-collapsed:before {
+  content: "\EF11";
+}
+
+/* line 61, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-mobile:before {
+  content: "\EEFF";
+}
+
+/* line 62, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-pencil:before {
+  content: "\EEF7";
+}
+
+/* line 63, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-play:before {
+  content: "\EF04";
+}
+
+/* line 64, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-key:before {
+  content: "\EEFB";
+}
+
+/* line 65, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-plus-v2-1:before {
+  content: "\EEF3";
+}
+
+/* line 66, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-share:before {
+  content: "\EF05";
+}
+
+/* line 67, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-floorplan:before {
+  content: "\EEE7";
+}
+
+/* line 68, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-set-up:before {
+  content: "\EEF8";
+}
+
+/* line 69, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-file-v2:before {
+  content: "\EEE9";
+}
+
+/* line 70, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-file-v1:before {
+  content: "\EF28";
+}
+
+/* line 71, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-expand:before {
+  content: "\EF16";
+}
+
+/* line 72, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-comment:before {
+  content: "\EEEE";
+}
+
+/* line 73, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-note:before {
+  content: "\EEE8";
+}
+
+/* line 74, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-financial:before {
+  content: "\EEEC";
+}
+
+/* line 75, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-close-v1:before {
+  content: "\EEF4";
+}
+
+/* line 76, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-clock:before {
+  content: "\EF00";
+}
+
+/* line 77, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-camera:before {
+  content: "\EEE5";
+}
+
+/* line 78, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-calendar:before {
+  content: "\EEED";
+}
+
+/* line 79, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-building:before {
+  content: "\EEFC";
+}
+
+/* line 80, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-reminder:before {
+  content: "\EF01";
+}
+
+/* line 81, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-activity:before {
+  content: "\EF09";
+}
+
+/* line 82, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-bar-graph:before {
+  content: "\EF10";
+}
+
+/* line 83, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-home:before {
+  content: "\EF06";
+}
+
+/* line 84, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-line-graph:before {
+  content: "\EF0F";
+}
+
+/* line 85, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-user-plus:before {
+  content: "\EEE1";
+}
+
+/* line 86, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-collapse:before {
+  content: "\EF15";
+}
+
+/* line 87, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-nav-down:before {
+  content: "\EF1B";
+}
+
+/* line 88, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-nav-left:before {
+  content: "\EF1A";
+}
+
+/* line 89, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-nav-right:before {
+  content: "\EF19";
+}
+
+/* line 90, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-nav-up:before {
+  content: "\EF18";
+}
+
+/* line 91, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-download:before {
+  content: "\EF1E";
+}
+
+/* line 92, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-upload:before {
+  content: "\EF1D";
+}
+
+/* line 93, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-picture:before {
+  content: "\EEE6";
+}
+
+/* line 94, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-paperclip:before {
+  content: "\EF0E";
+}
+
+/* line 95, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-check:before {
+  content: "\EF0D";
+}
+
+/* line 96, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-move:before {
+  content: "\EF17";
+}
+
+/* line 97, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-move-v2:before {
+  content: "\EF1F";
+}
+
+/* line 98, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-officepark:before {
+  content: "\EEFD";
+}
+
+/* line 99, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-portfolio:before {
+  content: "\EF07";
+}
+
+/* line 100, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-pipeline:before {
+  content: "\EF08";
+}
+
+/* line 101, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-vts-logo:before {
+  content: "\EF21";
+}
+
+/* line 102, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-integrate:before {
+  content: "\EF0C";
+}
+
+/* line 103, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-filter:before {
+  content: "\EF0B";
+}
+
+/* line 104, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-deal:before {
+  content: "\EEEB";
+}
+
+/* line 105, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-information:before {
+  content: "\EEEA";
+}
+
+/* line 106, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-location:before {
+  content: "\EEFE";
+}
+
+/* line 107, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-lock:before {
+  content: "\EEF9";
+}
+
+/* line 108, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-unlock:before {
+  content: "\EEFA";
+}
+
+/* line 109, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-notification:before {
+  content: "\EF02";
+}
+
+/* line 110, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-preview:before {
+  content: "\EEEF";
+}
+
+/* line 111, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-list-expanded:before {
+  content: "\EF12";
+}
+
+/* line 112, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-contact-info:before {
+  content: "\EEE3";
+}
+
+/* line 113, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-close-v2:before {
+  content: "\EEF5";
+}
+
+/* line 114, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-back-arrow:before {
+  content: "\EF1C";
+}
+
+/* line 115, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-ellipsis:before {
+  content: "\EF20";
+}
+
+/* line 116, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-link:before {
+  content: "\EF2A";
+}
+
+/* line 117, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-doc-outlined:before {
+  content: "\EF22";
+  color: #26BCE7;
+}
+
+/* line 118, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-doc-filled:before {
+  content: "\EF25";
+  color: #26BCE7;
+}
+
+/* line 119, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-pdf-outlined:before {
+  content: "\EF23";
+  color: #FE5D5D;
+}
+
+/* line 120, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-pdf-filled:before {
+  content: "\EF26";
+  color: #FE5D5D;
+}
+
+/* line 121, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-xls-outlined:before {
+  content: "\EF24";
+  color: #2ADB9F;
+}
+
+/* line 122, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-xls-filled:before {
+  content: "\EF27";
+  color: #2ADB9F;
+}
+
+/* line 123, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-public-link:before {
+  content: "";
+}
+
+/* line 124, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-duplicate:before {
+  content: "";
+}
+
+/* line 125, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-edit-space:before {
+  content: "";
+}
+
+/* line 126, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-edit-deal:before {
+  content: "";
+}
+
+/* line 127, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-retail:before {
+  content: "";
+}
+
+/* line 128, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-industrial:before {
+  content: "";
+}
+
+/* line 129, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-3d-modeling:before {
+  content: "";
+}
+
+/* line 130, ../../app/assets/stylesheets/horse/icons/_icons.scss */
+.icon-amenities:before {
+  content: "";
+}
+
+/* angularjs ng-cloak */
+/* line 2, ../../app/assets/stylesheets/horse/_common.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* line 7, ../../app/assets/stylesheets/horse/_common.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 10, ../../app/assets/stylesheets/horse/_common.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+/* line 15, ../../app/assets/stylesheets/horse/_common.scss */
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+}
+
+/* line 19, ../../app/assets/stylesheets/horse/_common.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 3, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+html,
+body {
+  color: #394351;
+  font-size: 14px;
+  height: 100%;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-weight: 400;
+}
+
+/* line 12, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+h1, h2, h3, h4, h5, p, ul {
+  margin: 0;
+  padding: 0;
+}
+/* line 16, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+h1.with-tail, h2.with-tail, h3.with-tail, h4.with-tail, h5.with-tail, p.with-tail, ul.with-tail {
+  padding-bottom: 10px;
+}
+/* line 19, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+h1.with-tail:after, h2.with-tail:after, h3.with-tail:after, h4.with-tail:after, h5.with-tail:after, p.with-tail:after, ul.with-tail:after {
+  content: '';
+  display: block;
+  position: relative;
+  background: #26BCE7;
+  height: 2px;
+  width: 40px;
+  top: 10px;
+}
+
+/* line 31, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+h1,
+.h1 {
+  font-size: 38px;
+  font-weight: 300;
+}
+
+/* line 37, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+h2,
+.h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/* line 43, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+h3,
+.h3 {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* line 51, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+h4,
+.h4 {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* line 58, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+h5,
+.h5 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 64, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+label, .fieldset-legend,
+.label,
+.inputwithunit-container .inputwithunit-unit {
+  color: #7B90AB;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 72, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+label.v2, .v2.fieldset-legend,
+.label.v2,
+.inputwithunit-container .v2.inputwithunit-unit {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+/* line 80, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+li {
+  list-style-type: none;
+}
+
+/* line 84, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+a,
+.link,
+.clickable {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  text-decoration: none;
+  color: #394351;
+  cursor: pointer;
+}
+/* line 92, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+a:hover,
+.link:hover,
+.clickable:hover {
+  color: #26BCE7;
+}
+/* line 94, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+a:before,
+.link:before,
+.clickable:before {
+  font-size: 18px;
+  margin-right: 5px;
+}
+/* line 99, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+a.primary,
+.link.primary,
+.clickable.primary {
+  color: #26BCE7;
+}
+/* line 101, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+a.primary:hover,
+.link.primary:hover,
+.clickable.primary:hover {
+  color: #2BD0FF;
+}
+/* line 105, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+a.modal-link:after,
+.link.modal-link:after,
+.clickable.modal-link:after {
+  content: '\EF1B';
+  font-family: 'vts-icons';
+  font-size: 12px;
+  margin-left: 5px;
+  color: #394351;
+  position: relative;
+  top: -1px;
+}
+/* line 117, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+a.icon-only:before,
+.link.icon-only:before,
+.clickable.icon-only:before {
+  margin-right: 0px;
+}
+/* line 118, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+a.icon-only.small:before,
+.link.icon-only.small:before,
+.clickable.icon-only.small:before {
+  font-size: 18px;
+}
+/* line 119, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+a.icon-only.xsmall:before,
+.link.icon-only.xsmall:before,
+.clickable.icon-only.xsmall:before {
+  font-size: 13px;
+}
+
+/* line 124, ../../app/assets/stylesheets/horse/_element-defaults.scss */
+hr {
+  background-color: #EBEFF3;
+  width: 100%;
+  height: 2px;
+  border: none;
+  margin: 20px 0 10px 0;
+}
+
+/* line 1, ../../app/assets/stylesheets/horse/flash/_flash.scss */
+.flashes {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  margin-top: 55px;
+}
+
+/* line 7, ../../app/assets/stylesheets/horse/flash/_flash.scss */
+.flash, .terms .terms-flash {
+  background-color: #2ADB9F;
+  opacity: 0.9;
+  color: #FFFFFF;
+  padding: 6px 0 6px 19px;
+  position: relative;
+  margin-bottom: 1px;
+}
+/* line 14, ../../app/assets/stylesheets/horse/flash/_flash.scss */
+.flash .flash-message, .terms .terms-flash .flash-message {
+  font-size: 14px;
+  margin-right: 25px;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+}
+/* line 19, ../../app/assets/stylesheets/horse/flash/_flash.scss */
+.flash .flash-dismiss, .terms .terms-flash .flash-dismiss {
+  position: absolute;
+  right: 5px;
+  top: 9px;
+  cursor: pointer;
+}
+
+/* line 27, ../../app/assets/stylesheets/horse/flash/_flash.scss */
+.flash-error {
+  background-color: #FE5D5D;
+}
+
+/* line 5, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset {
+  background-color: #FFFFFF;
+  border-color: #DBE2E7;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+/* line 17, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset .dropdown[disabled] {
+  cursor: default;
+  background: #394351;
+  position: relative;
+  top: -23px;
+  opacity: 0.3;
+  height: 48px;
+  color: white;
+  padding: 0;
+}
+/* line 26, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset .dropdown[disabled] + .fieldset-input-iconcontainer {
+  margin-top: 11px;
+}
+/* line 29, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset .dropdown[disabled] .dropdown-currentselection-value,
+.fieldset .dropdown[disabled] .fieldset-input,
+.fieldset .dropdown[disabled] .fieldset-textarea {
+  color: #FFFFFF;
+  position: absolute;
+  top: 21px;
+  left: 11px;
+}
+/* line 36, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset .dropdown[disabled] .dropdown-downarrow {
+  display: none;
+}
+/* line 39, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset .dropdown[disabled] input {
+  background: #394351;
+}
+/* line 43, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset .dropdown[readonly] {
+  cursor: default;
+}
+
+/* line 49, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-row {
+  position: relative;
+  border-top: inherit;
+}
+/* line 52, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-row:first-child {
+  border: none;
+}
+/* line 55, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-row > input,
+.fieldset-row > textarea,
+.fieldset-row > div {
+  border-left: 1px solid #DBE2E7;
+  border-radius: 0;
+}
+/* line 60, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-row > input:first-of-type,
+.fieldset-row > textarea:first-of-type,
+.fieldset-row > div:first-of-type {
+  border: none;
+}
+/* line 64, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-row > i + .fieldset-inputwithicon-container {
+  border-left: none;
+}
+
+/* line 69, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-legend {
+  color: #394351;
+}
+
+/* line 74, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-addicon {
+  float: right;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* line 80, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-container, .fieldset-textarea-container {
+  position: relative;
+  display: inline-block;
+  background-color: #FFFFFF;
+  height: 47px;
+  vertical-align: bottom;
+  width: 50%;
+}
+/* line 87, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-container label, .fieldset-textarea-container label, .fieldset-input-container .fieldset-legend, .fieldset-textarea-container .fieldset-legend {
+  display: block;
+  padding: 8px 10px 4px 10px;
+}
+/* line 91, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-container.doublewide-input, .doublewide-input.fieldset-textarea-container {
+  width: 100%;
+}
+/* line 93, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-container.doublewide-input input, .doublewide-input.fieldset-textarea-container input,
+.fieldset-input-container.doublewide-input select,
+.doublewide-input.fieldset-textarea-container select {
+  width: 100%;
+}
+/* line 98, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-container.onethird-input, .onethird-input.fieldset-textarea-container {
+  width: 33%;
+}
+/* line 101, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-container.fieldset-input-container-labelless, .fieldset-input-container-labelless.fieldset-textarea-container {
+  padding-top: 23px;
+}
+/* line 105, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-container.textarea-input, .textarea-input.fieldset-textarea-container {
+  width: 100%;
+  height: auto;
+}
+/* line 109, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-container.textarea-input .fieldset-input-label-button, .textarea-input.fieldset-textarea-container .fieldset-input-label-button {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 5px;
+}
+
+/* line 117, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-label-button {
+  float: right;
+  margin-left: 3px;
+  cursor: pointer;
+  color: #26BCE7;
+}
+
+/* line 124, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-textarea-container {
+  height: 130px;
+}
+
+/* line 129, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input, .fieldset-textarea {
+  font-size: 14px;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-weight: 400;
+  width: 100%;
+  border: none;
+  color: #394351;
+}
+/* line 2, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.fieldset-input::-webkit-input-placeholder, .fieldset-textarea::-webkit-input-placeholder {
+  color: #95A9C3;
+}
+/* line 3, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.fieldset-input:-moz-placeholder, .fieldset-textarea:-moz-placeholder {
+  color: #95A9C3;
+}
+/* line 4, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.fieldset-input::-moz-placeholder, .fieldset-textarea::-moz-placeholder {
+  color: #95A9C3;
+}
+/* line 5, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.fieldset-input:-ms-input-placeholder, .fieldset-textarea:-ms-input-placeholder {
+  color: #95A9C3;
+}
+/* line 139, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input:focus, .fieldset-textarea:focus {
+  outline-width: 0;
+}
+
+/* line 144, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+/* line 149, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-textarea.extended-textarea {
+  height: 165px;
+}
+/* line 152, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-textarea.single-textarea {
+  padding: 10px 0 0 10px;
+}
+
+/* line 157, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-select {
+  background-color: #FFFFFF;
+  border: none;
+  color: #95A9C3;
+  font-size: 14px;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  width: 100%;
+  height: 47px;
+  text-transform: capitalize;
+}
+/* line 166, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-select:focus {
+  outline-width: 0;
+}
+/* line 169, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-select.fieldset-input-select-selected {
+  color: #394351;
+}
+
+/* line 174, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-inputwithicon-container {
+  position: relative;
+}
+/* line 176, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-inputwithicon-container i {
+  font-size: 16px;
+}
+/* line 179, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-inputwithicon-container .fieldset-input, .fieldset-inputwithicon-container .fieldset-textarea {
+  width: 100%;
+}
+
+/* line 184, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-iconcontainer {
+  position: absolute;
+  right: 0;
+  padding-right: 3px;
+  color: #7B90AB;
+}
+/* line 189, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-iconcontainer i {
+  font-size: 16px;
+}
+
+/* line 194, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-suffix {
+  font-size: 12px;
+  text-transform: uppercase;
+  position: absolute;
+  right: 5px;
+  bottom: 7px;
+}
+
+/* line 202, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-input-suffix-left {
+  top: 23px;
+  position: absolute;
+  left: 4px;
+  color: #EBEFF3;
+  font-size: 12px;
+}
+
+/* line 213, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-icon-close {
+  position: absolute;
+  left: -25px;
+}
+
+/* line 221, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset .dropdown[disabled] {
+  top: -28px;
+  height: 100%;
+}
+/* line 228, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset-row:first-of-type {
+  border: none;
+}
+/* line 232, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset-input-container, .flipper-deal-modal .fieldset-textarea-container {
+  height: 55px;
+  background-color: transparent;
+}
+/* line 235, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset-input-container label, .flipper-deal-modal .fieldset-textarea-container label, .flipper-deal-modal .fieldset-input-container .fieldset-legend, .flipper-deal-modal .fieldset-textarea-container .fieldset-legend {
+  padding: 10px 10px 4px 10px;
+}
+/* line 238, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset-input-container.textarea-input, .flipper-deal-modal .textarea-input.fieldset-textarea-container {
+  height: auto;
+}
+/* line 243, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal label .fieldset-input, .flipper-deal-modal .fieldset-legend .fieldset-input, .flipper-deal-modal label .fieldset-textarea, .flipper-deal-modal .fieldset-legend .fieldset-textarea {
+  padding-top: 4px;
+}
+/* line 246, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset-textarea-container {
+  height: 125px;
+}
+/* line 250, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset-textarea.small-textarea {
+  height: inherit;
+}
+/* line 254, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset-input-select {
+  height: 55px;
+  background-color: transparent;
+}
+/* line 258, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset-input-iconcontainer {
+  bottom: 13px;
+}
+/* line 260, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset-input-iconcontainer .icon-calendar {
+  font-size: 14px;
+}
+/* line 264, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.flipper-deal-modal .fieldset-input-suffix {
+  bottom: 15px;
+}
+
+/* line 269, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.targets-container {
+  display: inline;
+}
+
+/* line 273, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.gray-fieldset {
+  background-color: #F5F5F5;
+}
+
+/* line 277, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.targets-fieldset {
+  padding-bottom: 1px;
+}
+/* line 279, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.targets-fieldset .checkbox {
+  top: 0;
+}
+
+/* line 284, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.dropdown-container {
+  min-height: 33px;
+  background-color: white;
+  padding: 5px 5px 0 5px;
+  border-color: #F2F2F2;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* line 297, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.opened-dropdown {
+  padding: 0;
+  z-index: 100;
+  position: absolute;
+  width: 478px;
+  margin-top: -6px;
+  max-height: 300px;
+  overflow: scroll;
+}
+
+/* line 307, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.dropdown-tag {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 8px;
+  margin-bottom: 5px;
+  display: inline-block;
+  border-width: 1px;
+  font-size: 14px;
+  color: #DBE2E7;
+  background: #F5F5F5;
+  border-radius: 15px;
+}
+
+/* line 320, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.targets-input-dropdown {
+  height: auto !important;
+}
+
+/* line 324, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.target-selection-label {
+  margin-left: 8px;
+}
+
+/* line 328, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.target-option-checkbox {
+  display: inline-block !important;
+}
+
+/* line 332, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.target-dropdown-option {
+  padding: 5px;
+}
+
+/* line 336, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.dropdown-option-border {
+  border-color: #F2F2F2;
+  border-style: solid;
+  border-width: 0 0 1px 0;
+}
+
+/* line 342, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.dropdown-floor-name {
+  margin-left: 20px;
+}
+
+/* line 346, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.dropdown-space-name {
+  margin-left: 40px;
+}
+
+/* line 350, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.target-dropdown-tenant-name {
+  display: inline;
+  float: right;
+  margin-right: 20px;
+  color: #7B90AB;
+}
+
+/* line 357, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.target-dropdown-lxd {
+  display: inline;
+  float: right;
+  width: 110px;
+  color: #7B90AB;
+}
+
+/* line 364, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.target-dropdown-container {
+  cursor: pointer;
+}
+
+/* line 368, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.target-dropdown-arrow {
+  margin-top: 4px;
+}
+
+/* line 373, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-label .fieldset-label-icon {
+  background: #A79CDE;
+  color: #FFFFFF;
+  font-size: 13px;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  font-weight: 700;
+  vertical-align: middle;
+  margin: 0 5px 5px 0;
+}
+/* line 387, ../../app/assets/stylesheets/horse/forms/_fieldset.scss */
+.fieldset-label .fieldset-label-text {
+  display: inline-block;
+}
+
+/* line 1, ../../app/assets/stylesheets/horse/forms/_form.scss */
+.form-section {
+  margin: 15px 0;
+  border-top: 2px solid #D7DDE3;
+  padding-top: 15px;
+}
+/* line 6, ../../app/assets/stylesheets/horse/forms/_form.scss */
+.form-section:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+/* line 12, ../../app/assets/stylesheets/horse/forms/_form.scss */
+.form-section .fieldset-label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #394351;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* line 19, ../../app/assets/stylesheets/horse/forms/_form.scss */
+.form-section .fieldset-label .fieldset-label-icon {
+  display: inline-block;
+  background: #394351;
+  color: #DBE2E7;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  margin-right: 5px;
+  font-size: 13px;
+}
+/* line 29, ../../app/assets/stylesheets/horse/forms/_form.scss */
+.form-section .fieldset-label .fieldset-label-icon i {
+  display: inline-block;
+  padding: 4px 0 0 1px;
+}
+
+/* line 37, ../../app/assets/stylesheets/horse/forms/_form.scss */
+.errors {
+  clear: both;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 9px;
+  background: #FE5D5D;
+  color: #FFFFFF;
+}
+
+/* line 47, ../../app/assets/stylesheets/horse/forms/_form.scss */
+.flipper-deal-modal .form-section .fieldset-label {
+  margin-bottom: 5px;
+}
+
+/* line 1, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.tagfield {
+  border: 1px solid #DBE2E7;
+  background: #FFFFFF;
+  position: relative;
+  padding: 0 5px 5px 10px;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+}
+
+/* line 11, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.tagfield-selected-tag {
+  display: inline-block;
+  background: #EBEFF3;
+  padding: 2px 10px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+/* line 18, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.tagfield-selected-tag.prepare-to-delete {
+  background: #FE5D5D;
+  color: white;
+}
+
+/* line 24, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.tagfield-selected-tag-remove {
+  color: #7B90AB;
+  margin-left: 5px;
+  cursor: pointer;
+}
+/* line 28, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.prepare-to-delete .tagfield-selected-tag-remove {
+  color: white;
+}
+
+/* line 33, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.tagfield-filter, .tagfield-filter-widthreference {
+  background: transparent;
+  color: #394351;
+  margin-bottom: 5px;
+  border: 0;
+  outline: 0;
+  padding: 0;
+}
+/* line 2, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.tagfield-filter::-webkit-input-placeholder, .tagfield-filter-widthreference::-webkit-input-placeholder {
+  color: #95A9C3;
+}
+/* line 3, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.tagfield-filter:-moz-placeholder, .tagfield-filter-widthreference:-moz-placeholder {
+  color: #95A9C3;
+}
+/* line 4, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.tagfield-filter::-moz-placeholder, .tagfield-filter-widthreference::-moz-placeholder {
+  color: #95A9C3;
+}
+/* line 5, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.tagfield-filter:-ms-input-placeholder, .tagfield-filter-widthreference:-ms-input-placeholder {
+  color: #95A9C3;
+}
+
+/* line 45, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.tagfield-filter-widthreference {
+  display: inline-block;
+  position: absolute;
+  padding: 0 10px;
+  left: -9999px;
+}
+
+/* line 53, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.tagfield-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border: 1px solid #DBE2E7;
+  z-index: 300;
+}
+
+/* line 64, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.tagfield-options-option {
+  background: white;
+  width: 100%;
+  color: #7B90AB;
+  padding: 5px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-transform: none;
+}
+/* line 73, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.tagfield-options-option.custom-entry {
+  text-decoration: underline;
+}
+
+/* line 78, ../../app/assets/stylesheets/horse/forms/_tagfield.scss */
+.tagfield-options-option.highlight {
+  background: #26BCE7;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/* line 2, ../../app/assets/stylesheets/horse/forms/_input.scss */
+input.ng-invalid.ng-dirty {
+  border-bottom: 1px solid #FE5D5D;
+}
+/* line 5, ../../app/assets/stylesheets/horse/forms/_input.scss */
+input[type=number]::-webkit-inner-spin-button,
+input input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* line 10, ../../app/assets/stylesheets/horse/forms/_input.scss */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/* line 13, ../../app/assets/stylesheets/horse/forms/_input.scss */
+input[required] {
+  box-shadow: none;
+}
+/* line 16, ../../app/assets/stylesheets/horse/forms/_input.scss */
+input[disabled] {
+  background: #394351;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  height: 48px;
+  color: #FFFFFF;
+  padding: 10px 0 0 10px;
+}
+/* line 25, ../../app/assets/stylesheets/horse/forms/_input.scss */
+input[disabled] + .fieldset-input-iconcontainer {
+  margin-top: 11px;
+}
+/* line 2, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+input::-webkit-input-placeholder {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #95A9C3;
+}
+/* line 3, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+input:-moz-placeholder {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #95A9C3;
+}
+/* line 4, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+input::-moz-placeholder {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #95A9C3;
+}
+/* line 5, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+input:-ms-input-placeholder {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #95A9C3;
+}
+
+/* line 37, ../../app/assets/stylesheets/horse/forms/_input.scss */
+select[required] {
+  box-shadow: none;
+}
+
+/* line 42, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.input, .inputwithicon-container .inputwithicon-input, .inputwithicon-container .inputwithicon-icon, .search .search-input, .inputwithunit-container .inputwithunit-input {
+  border: 1px solid #DBE2E7;
+  border-radius: 3px;
+  padding: 5px;
+  width: 100%;
+}
+
+/* line 50, ../../app/assets/stylesheets/horse/forms/_input.scss */
+textarea[disabled] {
+  background: #394351;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  height: 120px;
+  color: #FFFFFF;
+  padding: 20px 0 0 10px;
+}
+/* line 59, ../../app/assets/stylesheets/horse/forms/_input.scss */
+textarea[disabled] + .fieldset-input-iconcontainer {
+  margin-top: 11px;
+}
+
+/* line 65, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.textarea {
+  width: 100%;
+  border-radius: 3px;
+  padding: 5px;
+  border: 1px solid #DBE2E7;
+  height: 100px;
+  resize: none;
+}
+
+/* line 74, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.warning-input {
+  border-bottom: 1px solid #FE5D5D;
+  color: #FE5D5D;
+}
+/* line 2, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.warning-input::-webkit-input-placeholder {
+  color: red;
+}
+/* line 3, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.warning-input:-moz-placeholder {
+  color: red;
+}
+/* line 4, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.warning-input::-moz-placeholder {
+  color: red;
+}
+/* line 5, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.warning-input:-ms-input-placeholder {
+  color: red;
+}
+
+/* line 82, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.inputwithicon-container {
+  display: inline-block;
+  width: 100%;
+}
+/* line 85, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.inputwithicon-container .inputwithicon-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 95%;
+  border-right: none;
+}
+/* line 92, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.inputwithicon-container .inputwithicon-icon {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 5%;
+  padding: 5px;
+  top: 0.2px;
+  right: 1px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+
+/* line 107, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.search {
+  display: inline-block;
+  width: 160px;
+  position: relative;
+}
+/* line 111, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.search .icon-mag {
+  position: absolute;
+  color: #26BCE7;
+  left: 6px;
+  top: 3px;
+  font-weight: 700;
+}
+/* line 118, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.search .search-input {
+  height: 30px;
+  padding: 0;
+  outline: 0;
+  border: 1px solid #C5CBD4;
+  padding: 0 5px 1px 25px;
+  border-radius: 3px;
+}
+/* line 2, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.search .search-input::-webkit-input-placeholder {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #95A9C3;
+}
+/* line 3, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.search .search-input:-moz-placeholder {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #95A9C3;
+}
+/* line 4, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.search .search-input::-moz-placeholder {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #95A9C3;
+}
+/* line 5, ../../app/assets/stylesheets/horse/forms/_mixins.scss */
+.search .search-input:-ms-input-placeholder {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  color: #95A9C3;
+}
+/* line 131, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.search .search-input:focus {
+  border-color: #26BCE7;
+}
+
+/* line 137, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.inputwithunit-container {
+  display: inline-block;
+  width: 135px;
+  border: 1px solid #DBE2E7;
+  border-radius: 3px;
+  padding: 0 50px 0 5px;
+  position: relative;
+}
+/* line 144, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.inputwithunit-container .inputwithunit-input {
+  height: 28px;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+}
+/* line 152, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.inputwithunit-container .inputwithunit-unit {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+}
+
+/* line 162, ../../app/assets/stylesheets/horse/forms/_input.scss */
+.flipper-deal-modal input[disabled] {
+  height: 100%;
+}
+
+/* line 14, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button,
+.button,
+.default-button {
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  height: 40px;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 10px 15px;
+  position: relative;
+  cursor: pointer;
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: #FFFFFF;
+  border: 1px solid #DBE2E7;
+  color: #394351;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button:hover,
+.button:hover,
+.default-button:hover {
+  background: #FFFFFF;
+  border: 1px solid #26BCE7;
+  color: #394351;
+}
+/* line 29, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.primary,
+.button.primary,
+.default-button.primary {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: #FFFFFF;
+  border: 1px solid #DBE2E7;
+  color: #26BCE7;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.primary:hover,
+.button.primary:hover,
+.default-button.primary:hover {
+  background: #FFFFFF;
+  border: 1px solid #26BCE7;
+  color: #26BCE7;
+}
+/* line 33, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.secondary,
+.button.secondary,
+.default-button.secondary {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: #26BCE7;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.secondary:hover,
+.button.secondary:hover,
+.default-button.secondary:hover {
+  background: #2BD0FF;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+}
+/* line 37, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.tertiary,
+.button.tertiary,
+.default-button.tertiary {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: #394351;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.tertiary:hover,
+.button.tertiary:hover,
+.default-button.tertiary:hover {
+  background: #617085;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+}
+/* line 41, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.save,
+.button.save,
+.default-button.save {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: #2ADB9F;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.save:hover,
+.button.save:hover,
+.default-button.save:hover {
+  background: #2FF2B0;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+}
+/* line 45, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.toggled,
+.button.toggled,
+.default-button.toggled {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: #394351;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+  z-index: 100;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.toggled:hover,
+.button.toggled:hover,
+.default-button.toggled:hover {
+  background: #394351;
+  border: 1px solid #394351;
+  color: #FFFFFF;
+}
+/* line 49, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.toggled.disabled,
+.button.toggled.disabled,
+.default-button.toggled.disabled {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: #95A9C3;
+  border: 1px solid #DBE2E7;
+  color: #617085;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.toggled.disabled:hover,
+.button.toggled.disabled:hover,
+.default-button.toggled.disabled:hover {
+  background: #95A9C3;
+  border: 1px solid #DBE2E7;
+  color: #617085;
+}
+/* line 54, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.export,
+.button.export,
+.default-button.export {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: #2ADB9F;
+  border: 1px solid transparent;
+  color: #FFFFFF;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.export:hover,
+.button.export:hover,
+.default-button.export:hover {
+  background: #FFFFFF;
+  border: 1px solid #2ADB9F;
+  color: #2ADB9F;
+}
+/* line 58, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button[disabled], button.disabled,
+.button[disabled],
+.button.disabled,
+.default-button[disabled],
+.default-button.disabled {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: #F5F5F5;
+  border: 1px solid #DBE2E7;
+  color: #C5CBD4;
+  cursor: default;
+  pointer-events: none;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button[disabled]:hover, button.disabled:hover,
+.button[disabled]:hover,
+.button.disabled:hover,
+.default-button[disabled]:hover,
+.default-button.disabled:hover {
+  background: #F5F5F5;
+  border: 1px solid #DBE2E7;
+  color: #C5CBD4;
+}
+/* line 65, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.jumbo,
+.button.jumbo,
+.default-button.jumbo {
+  font-size: 18px;
+  height: 50px;
+  padding: 12px 15px;
+}
+/* line 71, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.small,
+.button.small,
+.default-button.small {
+  font-size: 13px;
+  height: 30px;
+  padding: 5px 10px;
+}
+/* line 76, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.small:before,
+.button.small:before,
+.default-button.small:before {
+  margin-right: 8px;
+  font-size: 18px;
+}
+/* line 82, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.xsmall,
+.button.xsmall,
+.default-button.xsmall {
+  font-size: 12px;
+  height: 20px;
+  padding: 0 5px;
+}
+/* line 87, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.xsmall:before,
+.button.xsmall:before,
+.default-button.xsmall:before {
+  margin-right: 5px;
+  font-size: 13px;
+}
+/* line 93, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.full-width,
+.button.full-width,
+.default-button.full-width {
+  width: 100%;
+}
+/* line 97, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-button,
+.button.icon-button,
+.default-button.icon-button {
+  padding: 7px 10px;
+}
+/* line 100, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-button.small,
+.button.icon-button.small,
+.default-button.icon-button.small {
+  padding: 5px 8px;
+}
+/* line 102, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-button.small:before,
+.button.icon-button.small:before,
+.default-button.icon-button.small:before {
+  font-size: 18px;
+}
+/* line 105, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-button.xsmall,
+.button.icon-button.xsmall,
+.default-button.icon-button.xsmall {
+  padding: 0;
+}
+/* line 107, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-button.xsmall:before,
+.button.icon-button.xsmall:before,
+.default-button.icon-button.xsmall:before {
+  font-size: 13px;
+}
+/* line 110, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-button:before,
+.button.icon-button:before,
+.default-button.icon-button:before {
+  margin-right: 0;
+  font-size: 24px;
+}
+/* line 116, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-only,
+.button.icon-only,
+.default-button.icon-only {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #394351;
+  height: 100%;
+  padding: 0;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-only:hover,
+.button.icon-only:hover,
+.default-button.icon-only:hover {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #26BCE7;
+}
+/* line 121, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-only.primary,
+.button.icon-only.primary,
+.default-button.icon-only.primary {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  background: transparent;
+  border: 1px solid transparent;
+  color: #26BCE7;
+}
+/* line 7, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-only.primary:hover,
+.button.icon-only.primary:hover,
+.default-button.icon-only.primary:hover {
+  background: transparent;
+  border: 1px solid transparent;
+  color: #2BD0FF;
+}
+/* line 125, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-only.small:before,
+.button.icon-only.small:before,
+.default-button.icon-only.small:before {
+  font-size: 18px;
+}
+/* line 126, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-only.xsmall:before,
+.button.icon-only.xsmall:before,
+.default-button.icon-only.xsmall:before {
+  font-size: 13px;
+}
+/* line 128, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button.icon-only:before,
+.button.icon-only:before,
+.default-button.icon-only:before {
+  margin-right: 0;
+  font-size: 24px;
+}
+/* line 134, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+button:before,
+.button:before,
+.default-button:before {
+  color: inherit;
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+/* line 141, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.toggle {
+  display: inline-block;
+}
+/* line 144, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.toggle button,
+.toggle .button,
+.toggle .default-button {
+  border-radius: 0;
+  margin-left: -1px;
+}
+/* line 150, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.toggle button:first-child,
+.toggle .button:first-child,
+.toggle .default-button:first-child {
+  border-radius: 3px 0 0 3px;
+}
+/* line 151, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.toggle button:last-child,
+.toggle .button:last-child,
+.toggle .default-button:last-child {
+  border-radius: 0 3px 3px 0;
+}
+/* line 152, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.toggle button:hover,
+.toggle .button:hover,
+.toggle .default-button:hover {
+  z-index: 100;
+}
+
+/* line 157, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.button-group button {
+  width: 50%;
+  height: 50px;
+  border-radius: 0;
+}
+/* line 162, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.button-group button:first-child {
+  margin-right: -1px;
+}
+/* line 163, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.button-group button:hover {
+  z-index: 100;
+}
+
+/* line 167, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.share-button {
+  position: fixed;
+  left: 0;
+  color: white;
+  background: #2ADB9F;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  padding: 5px;
+  z-index: 200;
+  font-size: 18px;
+  line-height: 15px;
+}
+/* line 179, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.share-button .share-button-count {
+  display: inline-block;
+  background: #2FD37C;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  font-size: 14px;
+  margin: 0 7px;
+  text-align: center;
+  line-height: 21px;
+  vertical-align: middle;
+}
+/* line 192, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.share-button .share-button-label {
+  font-size: 14px;
+  display: inline-block;
+  margin-left: 7px;
+}
+/* line 198, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.share-button .share-button-cancel {
+  font-size: 14px;
+  font-weight: 700;
+  background: #2FD37C;
+  border-radius: 50%;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+/* line 208, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.share-button:before {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 213, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.building-spaces .share-button {
+  top: 165px;
+}
+/* line 217, ../../app/assets/stylesheets/horse/buttons/_button.scss */
+.portfoliofilters .share-button {
+  top: 110px;
+}
+
+/* line 1, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+body {
+  min-width: 320px;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+}
+
+/* line 26, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+p {
+  font-size: 18px;
+  font-weight: 100;
+  color: #7B90AB;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+/* line 34, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+.hero {
+  background-size: cover;
+  text-align: center;
+}
+/* line 37, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+.hero .outline-button {
+  float: right;
+  margin: 20px 5% 0 0;
+  padding: 12px 16px;
+}
+
+/* line 45, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+.hero .horizontal-logo, .main-nav .horizontal-logo {
+  float: left;
+  margin: 20px 0 0 5%;
+  cursor: pointer;
+  display: block;
+  width: 114px;
+  height: 25px;
+  background: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/public-pages/logo-horizontal-78f6c7ad428dca14308097ba582a02ec.png) no-repeat;
+}
+@media (max-width: 640px) {
+  /* line 45, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+  .hero .horizontal-logo, .main-nav .horizontal-logo {
+    width: 40px;
+  }
+}
+
+/* line 58, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+.filled-button, .outline-button {
+  letter-spacing: 1.5;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* line 66, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+.filled-button {
+  padding: 10px 40px;
+  background: #2FD37C;
+}
+
+/* line 72, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+.outline-button {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+/* line 78, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+.modal-open {
+  overflow: hidden;
+}
+
+/* line 82, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+/* line 90, ../../app/assets/stylesheets/horse/public-pages/_common.scss */
+.ok-close-modal-button {
+  display: none;
+}
+
+/* line 5, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .hero .hero-header {
+  padding: 125px 5%;
+}
+/* line 7, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .hero .hero-header h1, .info-page .hero .hero-header h2 {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+/* line 14, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .hero .hero-header h1 {
+  letter-spacing: 10;
+}
+/* line 15, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .hero .hero-header h2 {
+  font-size: 18px;
+  letter-spacing: 5;
+  padding-top: 10px;
+  margin: 0;
+}
+/* line 23, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .nav {
+  border-bottom: 1px solid #DBE2E7;
+  text-align: center;
+}
+/* line 27, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .nav a {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #7B90AB;
+  margin: 25px 3%;
+  display: inline-block;
+}
+/* line 34, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .nav a:hover {
+  color: #26BCE7;
+}
+/* line 37, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .nav a.selected {
+  color: #26BCE7;
+  border-bottom: 3px solid #26BCE7;
+  padding-bottom: 25px;
+  margin-bottom: 0;
+}
+/* line 46, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .info-page-section {
+  max-width: 1280px;
+  width: 100%;
+  padding: 0 5%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 40px;
+}
+/* line 55, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .info-page-section-image {
+  max-width: 745px;
+  width: calc(100% - 375px);
+  overflow: hidden;
+  display: inline-block;
+}
+/* line 62, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .info-page-section-divider {
+  width: 20px;
+  display: inline-block;
+}
+/* line 67, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .info-page-section-quote {
+  width: 355px;
+  height: 285px;
+  border: 15px solid #EBEFF3;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+}
+/* line 76, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .info-page-section-quote-text {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+  color: #7B90AB;
+  text-align: left;
+  margin: 0 25px;
+}
+/* line 85, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .info-page-section-quote-author {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 18px;
+  font-weight: 100;
+  font-style: italic;
+  color: #7B90AB;
+  text-align: right;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* line 99, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .info-page-section-bluequotes {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 100px;
+  font-weight: 100;
+  color: #26BCE7;
+  height: 50px;
+  text-align: left;
+  margin-left: 25px;
+}
+/* line 109, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .info-page-break {
+  width: 100%;
+  padding: 40px 5%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* line 114, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .info-page-break .line {
+  width: 100%;
+  height: 1px;
+  background: #DBE2E7;
+}
+/* line 121, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+.info-page .show-on-mobile {
+  display: none;
+}
+@media (max-width: 720px) {
+  /* line 126, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .info-page-section {
+    width: 100%;
+    padding: 0 5%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  /* line 132, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .info-page-section .info-page-section-divider {
+    height: 30px;
+    display: block;
+  }
+  /* line 136, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .info-page-section.team-summary {
+    width: 100%;
+  }
+  /* line 141, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .info-page-section-quote {
+    width: 100%;
+    height: auto;
+  }
+  /* line 146, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .info-page-section-quote-text {
+    font-size: 22px;
+  }
+  /* line 148, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .info-page-section-quote-author {
+    position: static;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+  /* line 154, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .info-page-section-image {
+    width: 100%;
+  }
+  /* line 156, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .hide-on-mobile {
+    display: none;
+  }
+  /* line 158, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .show-on-mobile {
+    display: block;
+  }
+}
+@media (max-width: 640px) {
+  /* line 163, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .hero .hero-header {
+    padding: 65px 5% 55px 5%;
+  }
+  /* line 165, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .hero .hero-header h2 {
+    font-size: 24px;
+  }
+  /* line 166, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .hero .hero-header h3 {
+    font-size: 12px;
+  }
+  /* line 168, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .hero .outline-button {
+    border: none;
+  }
+}
+@media (max-width: 560px) {
+  /* line 173, ../../app/assets/stylesheets/horse/public-pages/_info-pages.scss */
+  .info-page .nav {
+    display: none;
+  }
+}
+
+/* line 3, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press-article p {
+  color: black;
+}
+
+/* line 9, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .hero {
+  background-image: url(http://vts.com/assets/public-pages/press-hero-bg.jpg);
+}
+/* line 12, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .press-articles {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+/* line 17, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .hidden-articles {
+  display: none;
+  border-top: 1px solid #DBE2E7;
+}
+/* line 21, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .see-more-button, .press .press-kit-button {
+  display: block;
+  position: relative;
+  font-size: 12px;
+  text-align: center;
+  color: #7B90AB;
+  padding: 10px 0;
+  width: 115px;
+}
+/* line 30, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .see-more-button-container {
+  margin: 10px 0;
+  position: relative;
+  border-top: 1px solid #DBE2E7;
+  text-align: center;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.press .see-more-button-container:before, .press .see-more-button-container:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.press .see-more-button-container:after {
+  clear: both;
+}
+/* line 37, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .see-more-button {
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  background: white;
+  width: 100px;
+}
+/* line 45, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .press-kit-button {
+  border-color: #EBEFF3;
+  width: 150px;
+  float: left;
+  padding-right: 25px;
+  margin-right: 10px;
+}
+/* line 52, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .press-kit-button .icon-download {
+  font-size: 16px;
+  position: absolute;
+  right: 18px;
+  top: 9px;
+}
+/* line 59, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .press-inquiries {
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+  top: -8px;
+  margin-bottom: 40px;
+}
+/* line 66, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .press-article {
+  padding: 30px 0;
+  border-top: 1px solid #DBE2E7;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.press .press-article:before, .press .press-article:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.press .press-article:after {
+  clear: both;
+}
+/* line 70, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .press-article:first-child {
+  border: 0;
+}
+/* line 72, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .left {
+  width: 25%;
+  float: left;
+}
+/* line 76, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .right {
+  width: 65%;
+  float: left;
+  margin-left: 10%;
+}
+/* line 81, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .date {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+/* line 88, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .logo {
+  width: 100%;
+}
+/* line 91, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .publisher {
+  margin: 0;
+}
+/* line 94, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .title {
+  color: #26BCE7;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 12px 0 8px 0;
+  display: block;
+}
+/* line 101, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+.press .quote {
+  margin: 0;
+}
+@media (max-width: 640px) {
+  /* line 106, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+  .press .press-kit-button {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  /* line 111, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+  .press .press-inquiries {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 119, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+  .press .publisher {
+    display: none;
+  }
+  /* line 120, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+  .press .left {
+    width: 100%;
+  }
+  /* line 121, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+  .press .logo {
+    max-width: 300px;
+  }
+  /* line 122, ../../app/assets/stylesheets/horse/public-pages/_press.scss */
+  .press .right {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* line 2, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+.team .hero {
+  background-image: url(http://vts.com/assets/public-pages/team-photo-hero.jpg);
+}
+/* line 6, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+.team .team-header {
+  margin-bottom: 40px;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 24px;
+  color: #394351;
+  letter-spacing: 3;
+  text-transform: uppercase;
+  text-align: center;
+}
+/* line 7, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+.team .team-header:first-of-type {
+  margin-top: 40px;
+}
+/* line 17, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+.team .team-summary {
+  margin-bottom: 40px;
+}
+/* line 18, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+.team .team-metrics {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.team .team-metrics:before, .team .team-metrics:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.team .team-metrics:after {
+  clear: both;
+}
+/* line 24, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+.team .team-metric {
+  width: 25%;
+  float: left;
+  border-left: 1px solid #DBE2E7;
+  text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* line 31, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+.team .team-metric:first-child {
+  border: 0;
+}
+/* line 34, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+.team .team-metric-number {
+  font-size: 130px;
+  line-height: 110px;
+  font-weight: 100;
+  color: #394351;
+  margin: 0;
+}
+/* line 42, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+.team .team-metric-text {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  padding: 0 8px;
+  font-weight: 500;
+  color: #EBEFF3;
+  text-transform: uppercase;
+  margin: 0;
+}
+@media (max-width: 720px) {
+  /* line 53, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+  .team .team-metric {
+    width: 50%;
+  }
+  /* line 55, ../../app/assets/stylesheets/horse/public-pages/_team.scss */
+  .team .team-metric.grid {
+    border-top: 1px solid #DBE2E7;
+    padding: 20px 0 0 0;
+  }
+}
+
+/* line 2, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .hero {
+  background-image: url(http://vts.com/assets/public-pages/contact-hero-bg.jpg);
+}
+/* line 5, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .locations {
+  background: #DBE2E7;
+  padding: 100px 5%;
+  text-align: center;
+}
+/* line 9, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .locations h2 {
+  font-size: 70px;
+}
+/* line 11, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .location-links a {
+  font-size: 18px;
+  color: #7B90AB;
+  padding: 0 10px;
+  border-left: 1px solid #CCD5DD;
+}
+/* line 16, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .location-links a:first-child {
+  border: 0;
+}
+/* line 18, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map {
+  width: 100%;
+  max-width: 933px;
+  margin: 20px auto 0 auto;
+  position: relative;
+}
+/* line 23, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map img {
+  width: 100%;
+}
+/* line 25, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-dot {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background: #26BCE7;
+  border-radius: 50%;
+}
+/* line 31, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-dot.san-francisco {
+  top: 41%;
+  left: 5%;
+}
+/* line 32, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-dot.los-angeles {
+  top: 64%;
+  left: 12%;
+}
+/* line 33, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-dot.new-york {
+  top: 36%;
+  left: 88%;
+}
+/* line 34, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-dot.dallas {
+  top: 78%;
+  left: 49%;
+}
+/* line 35, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-dot.boston {
+  top: 23%;
+  left: 93%;
+}
+/* line 37, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-dot.boston .map-tag, .contact .map-dot.new-york .map-tag {
+  left: -215px;
+}
+/* line 39, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-dot.boston .map-tag .down-arrow, .contact .map-dot.new-york .map-tag .down-arrow {
+  left: 85%;
+}
+/* line 43, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-tag {
+  cursor: pointer;
+  background: white;
+  position: absolute;
+  top: -68px;
+  left: -40px;
+  border-radius: 5px;
+  width: 250px;
+  padding: 1px 10px 5px 10px;
+}
+/* line 52, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-tag .city {
+  color: #394351;
+  font-size: 24px;
+  margin: 0 0 -8px 0;
+  text-align: left;
+}
+/* line 58, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-tag .office {
+  font-size: 14px;
+  color: #7B90AB;
+  margin: 0;
+  text-align: left;
+}
+/* line 64, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-tag .down-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: -8px;
+  left: 15%;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+}
+/* line 74, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .map-tag .chevron {
+  color: #26BCE7;
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  top: 18px;
+}
+/* line 83, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .contact-info-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 0 5%;
+  background: rgba(57, 67, 81, 0.95);
+  top: 0;
+  left: 0;
+}
+/* line 92, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .contact-info {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  height: 90%;
+  max-height: 560px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 3px;
+  border-top: 5px solid #26BCE7;
+  background: #DBE2E7;
+  padding: 30px 30px;
+}
+/* line 109, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .contact-info p {
+  margin: 0;
+}
+/* line 110, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .contact-info .dismiss-modal {
+  cursor: pointer;
+  font-size: 28px;
+  position: absolute;
+  right: 5px;
+  top: 8px;
+}
+/* line 117, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .contact-info .city {
+  margin: 0;
+}
+/* line 118, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .contact-info .office {
+  margin: 0;
+  font-size: 16px;
+}
+/* line 122, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .contact-info .address-heading, .contact .contact-info .telephone-heading, .contact .contact-info .email-heading {
+  color: #394351;
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 5px;
+}
+/* line 128, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .contact-info .addresses p, .contact .contact-info .telephones p, .contact .contact-info .email {
+  font-size: 16px;
+}
+/* line 131, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact .contact-info .email {
+  color: #7B90AB;
+  font-weight: 300;
+  text-decoration: underline;
+}
+/* line 137, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+.contact #google-map-window {
+  height: 200px;
+  width: 100%;
+  margin: 20px 0;
+}
+@media (max-width: 900px) and (min-width: 551px) {
+  /* line 144, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .links a {
+    font-size: 14px;
+  }
+  /* line 148, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .map-dot.boston .map-tag, .contact .map-dot.new-york .map-tag {
+    left: -174;
+  }
+  /* line 150, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .map-tag {
+    width: 200px;
+    border-radius: 3px;
+    top: -51px;
+    left: -32px;
+  }
+  /* line 155, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .map-tag .city {
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  /* line 159, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .map-tag .office {
+    display: none;
+  }
+  /* line 160, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .map-tag .chevron {
+    font-size: 16px;
+    top: 12px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 168, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .locations h2 {
+    font-size: 48px;
+  }
+  /* line 169, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .location-links {
+    display: none;
+  }
+  /* line 170, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .map {
+    margin-top: 30px;
+  }
+  /* line 171, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .map img {
+    display: none;
+  }
+  /* line 172, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .map-dot {
+    max-width: 400px;
+    margin: 0 auto;
+    position: static;
+    display: block;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background: transparent;
+  }
+  /* line 180, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .map-dot.boston .map-tag, .contact .map-dot.new-york .map-tag {
+    left: auto;
+  }
+  /* line 183, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .map-tag {
+    width: 100%;
+    position: relative;
+    top: auto;
+    left: auto;
+    margin-top: 20px;
+  }
+  /* line 190, ../../app/assets/stylesheets/horse/public-pages/_contact.scss */
+  .contact .down-arrow {
+    display: none;
+  }
+}
+
+/* line 2, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .hero {
+  background-image: url(http://vts.com/assets/public-pages/testimonials-photo-hero.png);
+}
+/* line 5, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .info-page-section {
+  padding: 125px 0 45px;
+}
+/* line 7, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .info-page-section h3 {
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+/* line 12, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos {
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 15, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .video-thumbnail {
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+/* line 19, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .video-thumbnail .video-thumbnail-image {
+  width: 100%;
+}
+/* line 23, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .video-thumbnail:hover .testimonial-video-text {
+  display: none;
+}
+/* line 26, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .video-thumbnail:hover .play-button {
+  display: block;
+}
+/* line 28, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .video-thumbnail:hover .play-button:hover {
+  background-position: -61px 0;
+}
+/* line 34, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .testimonial-video-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* line 41, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .testimonial-video-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 46, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .testimonial-video-overlay {
+  color: #FFFFFF;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border-top: 1px;
+}
+/* line 53, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .testimonial-video-overlay-border {
+  width: 45px;
+  margin: 0 auto 15px;
+  border-bottom: 2px solid #FFFFFF;
+}
+/* line 58, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .testimonial-video-header {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 7px;
+}
+/* line 65, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .testimonial-video-subheader {
+  font-size: 15px;
+  line-height: 1.3;
+  color: #DBE2E7;
+}
+/* line 70, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .testimonial-videos .play-button {
+  display: none;
+  width: 61px;
+  height: 61px;
+  margin: 0 auto;
+  background: url(play_button_sprite.png) no-repeat;
+  background-position: 0 0;
+}
+/* line 80, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .product-videos .video-thumbnail-image {
+  width: 100%;
+}
+/* line 83, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .product-videos .video-thumbnail {
+  width: 50%;
+  cursor: pointer;
+}
+/* line 87, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .product-videos .testimonial-video-overlay-border {
+  width: 60px;
+}
+/* line 90, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .product-videos .testimonial-video-header {
+  font-size: 32px;
+}
+/* line 93, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+.testimonials .product-videos .testimonial-video-subheader {
+  font-size: 24px;
+}
+@media (max-width: 640px) {
+  /* line 98, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+  .testimonials .info-page-section {
+    padding: 40px 0 0 0;
+  }
+  /* line 102, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+  .testimonials .testimonial-videos .video-thumbnail {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 106, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+  .testimonials .testimonial-videos .video-thumbnail-image {
+    display: block;
+    max-width: 400px;
+    margin: 40px auto 0;
+  }
+  /* line 111, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+  .testimonials .testimonial-videos .play-button {
+    display: block;
+  }
+  /* line 114, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+  .testimonials .testimonial-videos .testimonial-video-text {
+    display: none;
+  }
+  /* line 120, ../../app/assets/stylesheets/horse/public-pages/_testimonials.scss */
+  .testimonials .product-videos .video-thumbnail:last-child {
+    margin-bottom: 40px;
+  }
+}
+
+/* line 6, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 11, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .content {
+  width: 47.5%;
+  padding-left: 5%;
+  float: left;
+  clear: left;
+}
+/* line 17, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .content .testimonial {
+  margin: 50px 0 0 0;
+  padding-left: 100px;
+  max-width: 450px;
+  min-height: 80px;
+  font-size: 14px;
+  font-weight: 700;
+}
+/* line 24, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .content .testimonial span {
+  font-style: italic;
+  font-weight: 300;
+}
+/* line 28, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .content .testimonial.jon-schultz {
+  background: url("/assets/public-pages/homepage-testimonial-photo-jon-schultz.png") no-repeat;
+}
+/* line 29, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .content .testimonial.michael-schmidt {
+  background: url("/assets/public-pages/homepage-testimonial-photo-michael-schmidt.png") no-repeat;
+}
+/* line 33, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .feature-img {
+  width: 47.5%;
+  float: left;
+  margin-left: 5%;
+  padding-top: 10px;
+}
+/* line 39, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .feature-img .section-separator {
+  display: none;
+}
+/* line 44, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .download-app-img-container {
+  width: 240px;
+  margin: auto;
+  margin-top: 20px;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.homepage .download-app-img-container:before, .homepage .download-app-img-container:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.homepage .download-app-img-container:after {
+  clear: both;
+}
+/* line 50, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .download-app-img-container .download-app-img:first-child {
+  margin-right: 20px;
+}
+/* line 54, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .download-app-img-container .download-app-img {
+  width: 110px;
+  height: 34px;
+  float: left;
+}
+/* line 59, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .download-app-img-container .download-app-img img {
+  max-width: 100%;
+}
+/* line 68, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .vts-ul h3 {
+  background: url(http://vts.com/assets/public-pages/homepage-bullet.png) no-repeat 0 2px;
+  padding-left: 25px;
+  margin: 15px 0 5px 0;
+  float: left;
+}
+/* line 74, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .vts-ul p {
+  margin: 5px 0 30px 25px;
+  clear: left;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.homepage .stacking-plan-components:before, .homepage .stacking-plan-components:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.homepage .stacking-plan-components:after {
+  clear: both;
+}
+/* line 81, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .stacking-plan-component {
+  width: 23.5%;
+  margin-left: 2%;
+  float: left;
+}
+/* line 85, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .stacking-plan-component:first-child {
+  margin-left: 0;
+}
+/* line 86, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .stacking-plan-component h3 {
+  margin: 20px 0;
+}
+/* line 87, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .stacking-plan-component .icon-wrapper {
+  position: relative;
+  display: inline-block;
+  border: 2px solid #DBE2E7;
+  background: white;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+}
+/* line 96, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .stacking-plan-component i {
+  font-size: 45px;
+  color: #7B90AB;
+  position: relative;
+  top: 16px;
+}
+/* line 104, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .section-separator {
+  margin-top: 100px;
+  padding-bottom: 100px;
+  width: 210%;
+  background: white;
+  position: relative;
+}
+/* line 110, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .section-separator .line {
+  width: 100%;
+  height: 1px;
+  background: #DBE2E7;
+}
+/* line 119, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .main-nav {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  height: 70px;
+  padding: 15px;
+  background-color: #394351;
+}
+/* line 127, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .main-nav .horizontal-logo {
+  margin-top: 5px;
+}
+/* line 130, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .main-nav .get-started-button {
+  margin: 0 0 0 20px;
+}
+/* line 135, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .nav-links {
+  float: right;
+}
+/* line 137, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .nav-links .nav-link {
+  float: left;
+  margin-left: 25px;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/* line 144, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .nav-links .nav-text-link {
+  line-height: 2.5;
+}
+/* line 146, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .nav-links .nav-text-link a {
+  color: #FFFFFF;
+}
+/* line 150, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .hero {
+  background-image: url(http://vts.com/assets/public-pages/homepage-hero-bg.jpg);
+  position: relative;
+  color: white;
+}
+/* line 154, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .hero h1 {
+  padding: 100px 5% 0 5%;
+  margin: 0;
+}
+/* line 158, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .hero h4 {
+  padding: 0 5% 40px 5%;
+  margin: 0;
+}
+/* line 162, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .hero .get-started-button {
+  margin: 15px 0 0 10px;
+}
+/* line 165, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .hero .hero-desk {
+  min-height: 250px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 170, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .hero .hero-desk img {
+  width: 100%;
+}
+/* line 174, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .tagline {
+  background: #394351;
+  padding: 50px 5%;
+}
+/* line 177, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .tagline h1 {
+  color: #7B90AB;
+  font-size: 32px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 650px;
+}
+/* line 183, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .tagline h1 strong {
+  font-weight: 400;
+}
+/* line 187, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider {
+  width: 100%;
+  height: 160px;
+  border-bottom: 1px solid #DBE2E7;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.homepage .client-slider:before, .homepage .client-slider:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.homepage .client-slider:after {
+  clear: both;
+}
+/* line 195, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .slide-container {
+  padding: 0 5%;
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: 40px;
+}
+/* line 201, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .slide-container.active {
+  left: 0%;
+}
+/* line 203, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .slide {
+  width: 25%;
+  float: left;
+}
+/* line 207, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .slider-control {
+  height: 4px;
+  width: 10px;
+  border-radius: 20px;
+  background: #EBEFF3;
+  display: inline-block;
+  cursor: pointer;
+  margin: 140px 0 0 5px;
+}
+/* line 215, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .slider-control:first-child {
+  margin-left: 0;
+}
+/* line 216, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .slider-control.active {
+  background: #26BCE7;
+}
+/* line 219, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo {
+  display: inline-block;
+  width: 225px;
+  height: 75px;
+  background: transparent url(http://vts.com/assets/public-pages/homepage-client-logo-sprite.png) 0px 0px no-repeat;
+}
+/* line 220, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.bentall-kennedy {
+  background-position: 0px 0px;
+}
+/* line 221, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.columbia-property-trust {
+  background-position: -225px 0px;
+}
+/* line 222, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.boston-properties {
+  background-position: -450px 0px;
+}
+/* line 223, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.hudson-pacific {
+  background-position: -675px 0px;
+}
+/* line 224, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.hines {
+  background-position: -900px 0px;
+}
+/* line 225, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.jbg {
+  background-position: -1125px 0px;
+}
+/* line 226, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.paramount {
+  background-position: -1350px 0px;
+}
+/* line 227, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.parkway {
+  background-position: -1575px 0px;
+}
+/* line 228, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.teachers {
+  background-position: 0px -75px;
+}
+/* line 229, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.blackstone {
+  background-position: -225px -75px;
+}
+/* line 230, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.cbre {
+  background-position: -450px -75px;
+}
+/* line 231, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.jll {
+  background-position: -675px -75px;
+}
+/* line 232, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.jamestown {
+  background-position: -900px -75px;
+}
+/* line 233, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.prudential {
+  background-position: -1125px -75px;
+}
+/* line 234, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.invesco {
+  background-position: -1350px -75px;
+}
+/* line 235, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .client-slider .client-logo.equity-office {
+  background-position: -1575px -75px;
+}
+/* line 238, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .pipeline, .homepage .portfolio, .homepage .stacking-plan, .homepage .lead-generation {
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative;
+  background: white;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.homepage .pipeline:before, .homepage .pipeline:after, .homepage .portfolio:before, .homepage .portfolio:after, .homepage .stacking-plan:before, .homepage .stacking-plan:after, .homepage .lead-generation:before, .homepage .lead-generation:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.homepage .pipeline:after, .homepage .portfolio:after, .homepage .stacking-plan:after, .homepage .lead-generation:after {
+  clear: both;
+}
+/* line 246, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .pipeline {
+  padding-top: 100px;
+}
+/* line 248, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .pipeline .feature-img {
+  text-align: center;
+}
+/* line 251, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .portfolio {
+  padding-top: 0;
+}
+/* line 255, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .stacking-plan {
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* line 259, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .stacking-plan p {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 800px;
+}
+/* line 264, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .stacking-plan img {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px 0 0 0;
+}
+/* line 269, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .stacking-plan .stacking-plan-break-line {
+  width: 100%;
+  height: 2px;
+  background: #DBE2E7;
+  margin-bottom: -40px;
+}
+/* line 275, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .stacking-plan .section-separator {
+  width: 100%;
+}
+/* line 278, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .investors > p {
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+}
+/* line 283, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .testimonial-videos {
+  margin: 0px auto;
+  max-width: 1280px;
+}
+/* line 286, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .testimonial-videos h1 {
+  text-align: center;
+  padding: 0 5% 60px 5%;
+}
+/* line 290, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .testimonial-videos img {
+  width: 33.33%;
+  cursor: pointer;
+  padding-left: 1px;
+}
+/* line 294, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .testimonial-videos img:first-child {
+  padding-left: 0;
+}
+/* line 296, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .testimonial-videos .section-separator {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/* line 304, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.homepage .lead-generation .videotours-button {
+  margin-left: 10px;
+}
+@media (max-width: 1000px) {
+  /* line 311, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider {
+    height: 140px;
+  }
+  /* line 313, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .slider-control {
+    margin-top: 120px;
+  }
+  /* line 314, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: transparent url(http://vts.com/assets/public-pages/homepage-client-logo-sprite-small.png) 0px 0px no-repeat;
+  }
+  /* line 315, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.bentall-kennedy {
+    background-position: 0px 0px;
+  }
+  /* line 316, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.columbia-property-trust {
+    background-position: -150px 0px;
+  }
+  /* line 317, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.boston-properties {
+    background-position: -300px 0px;
+  }
+  /* line 318, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.hudson-pacific {
+    background-position: -450px 0px;
+  }
+  /* line 319, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.hines {
+    background-position: -600px 0px;
+  }
+  /* line 320, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.jbg {
+    background-position: -750px 0px;
+  }
+  /* line 321, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.paramount {
+    background-position: -900px 0px;
+  }
+  /* line 322, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.parkway {
+    background-position: -1050px 0px;
+  }
+  /* line 323, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.teachers {
+    background-position: 0px -50px;
+  }
+  /* line 324, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.blackstone {
+    background-position: -150px -50px;
+  }
+  /* line 325, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.cbre {
+    background-position: -300px -50px;
+  }
+  /* line 326, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.jll {
+    background-position: -450px -50px;
+  }
+  /* line 327, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.jamestown {
+    background-position: -600px -50px;
+  }
+  /* line 328, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.prudential {
+    background-position: -750px -50px;
+  }
+  /* line 329, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.invesco {
+    background-position: -900px -50px;
+  }
+  /* line 330, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider .client-logo.equity-office {
+    background-position: -1050px -50px;
+  }
+}
+@media (max-width: 890px) {
+  /* line 335, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .hero-desk {
+    background: url(http://vts.com/assets/public-pages/homepage-hero-desk.png) top center;
+    background-size: cover;
+  }
+  /* line 338, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .hero-desk img {
+    display: none;
+  }
+  /* line 341, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .main-nav {
+    display: none !important;
+  }
+}
+@media (max-width: 640px) {
+  /* line 344, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .tagline h1 {
+    font-size: 32px;
+  }
+  /* line 346, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .section-separator {
+    width: 100%;
+  }
+  /* line 348, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .stacking-plan-component {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    max-width: 400px;
+    float: none;
+  }
+  /* line 353, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .stacking-plan-component:first-child {
+    margin: 0 auto;
+  }
+  /* line 356, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .content {
+    width: 100%;
+    padding: 0 5%;
+  }
+  /* line 359, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .content .testimonial {
+    padding: 100px 0 0 0;
+    margin: 0;
+    text-align: center;
+  }
+  /* line 363, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .content .testimonial.jon-schultz {
+    background-position: top center;
+  }
+  /* line 364, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .content .testimonial.michael-schmidt {
+    background-position: top center;
+  }
+  /* line 366, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .content .section-separator {
+    display: none;
+  }
+  /* line 369, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .feature-img {
+    width: 100%;
+    margin: 0;
+    padding: 0px 5%;
+    margin-top: 100px;
+  }
+  /* line 374, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .feature-img .section-separator {
+    display: block;
+  }
+  /* line 378, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .hero .filled-button {
+    display: block;
+    width: 145px;
+    margin: 20px auto 0 auto;
+  }
+  /* line 384, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .client-slider {
+    display: none;
+  }
+  /* line 387, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .pipeline .feature-img img {
+    width: 100%;
+    max-width: 350px;
+  }
+  /* line 394, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .testimonial-videos h1 {
+    padding-bottom: 20px;
+  }
+  /* line 395, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+  .homepage .testimonial-videos img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 40px auto 0 auto;
+  }
+}
+
+/* line 405, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  min-width: 320px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(57, 67, 81, 0.95);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#394351', endColorstr='#394351');
+  /* IE */
+  display: none;
+}
+/* line 417, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal#login-modal .center-column {
+  height: 300px;
+}
+/* line 418, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal#forgot-password-modal .center-column {
+  height: 210px;
+}
+/* line 419, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal#get-started-modal .center-column {
+  height: 460px;
+}
+/* line 420, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: #394351;
+  opacity: 0.95;
+}
+/* line 429, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .vertical-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+/* line 434, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .center-column {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  text-align: center;
+  max-width: 650px;
+  padding: 0 20px;
+}
+/* line 442, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container {
+  display: inline-block;
+  position: relative;
+}
+/* line 445, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .logo {
+  display: inline-block;
+  position: relative;
+  height: 75px;
+  width: 70px;
+  margin: 20px 0 30px 0;
+}
+/* line 451, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .logo img {
+  position: relative;
+}
+/* line 455, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container input {
+  padding: 10px 10px;
+}
+/* line 458, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .row {
+  margin: 10px 0;
+  position: relative;
+}
+/* line 461, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .row .btn {
+  width: 100%;
+  letter-spacing: 2px;
+  height: 41px;
+}
+/* line 467, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .modal-message {
+  color: #FFFFFF;
+  text-align: left;
+  margin: 12px 0;
+  font-size: 15px;
+  width: 100%;
+  padding: 10px;
+  display: none;
+}
+/* line 475, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .modal-message span {
+  padding-bottom: 5px;
+  display: inline-block;
+}
+/* line 479, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .modal-message.error {
+  background: #FE5D5D;
+}
+/* line 482, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .modal-message.success {
+  background: #2ADB9F;
+}
+/* line 486, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .login-options {
+  width: 100%;
+  margin: 15px 0;
+  display: inline-block;
+  font-size: 14px;
+  vertical-align: middle;
+  line-height: 16px;
+}
+/* line 493, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .login-options .forgot-password {
+  text-align: left;
+  float: left;
+}
+/* line 496, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .login-options .forgot-password a {
+  color: #EBEFF3;
+}
+/* line 500, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .login-options .remember-me {
+  float: right;
+}
+/* line 502, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .container .login-options .remember-me label, .modal .container .login-options .remember-me .fieldset-legend {
+  margin-right: 2px;
+}
+/* line 509, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .google-button {
+  display: none;
+  background-color: #d34836;
+  border: none;
+}
+/* line 516, ../../app/assets/stylesheets/horse/public-pages/_homepage.scss */
+.modal .modal-container .modal-video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 70%;
+  height: 70%;
+}
+
+/* line 1, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.get-started {
+  background: #EBEFF3;
+  text-align: center;
+  padding: 80px 5%;
+}
+/* line 5, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.get-started h1 {
+  margin: 0 auto;
+  max-width: 1100px;
+  color: #7B90AB;
+}
+/* line 10, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.get-started .get-started-button {
+  margin: 30px auto 0 auto;
+}
+
+/* line 13, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer {
+  background: #394351;
+  padding: 40px 5% 60px 5%;
+  position: relative;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.footer:before, .footer:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.footer:after {
+  clear: both;
+}
+/* line 19, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .vertical-logo {
+  background: url(http://vts.com/assets/public-pages/logo-vertical.png) 26px 0 no-repeat;
+  padding-top: 64px;
+  float: left;
+  margin-right: 60px;
+  color: #7B90AB;
+}
+/* line 27, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-site-links {
+  float: left;
+  letter-spacing: 1.5;
+}
+/* line 30, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-site-links a {
+  display: block;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  text-transform: uppercase;
+  color: #7B90AB;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+/* line 40, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-support-links {
+  float: left;
+  margin-left: 60px;
+}
+/* line 43, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-support-links p {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 14px;
+  letter-spacing: 1.5;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+/* line 50, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-support-links a {
+  color: #7B90AB;
+  text-decoration: underline;
+  font-size: 14px;
+}
+/* line 57, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-social-media-links {
+  position: absolute;
+  bottom: 60px;
+  right: 5%;
+}
+/* line 61, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-social-media-links a {
+  margin-left: 10px;
+  display: inline-block;
+}
+/* line 63, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-social-media-links a:first-child {
+  margin-left: 0;
+}
+/* line 66, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-social-media-links .link-image {
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  background: transparent url(http://vts.com/assets/public-pages/social-icons-sprite.png) 0px 0px no-repeat;
+}
+/* line 67, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-social-media-links .link-image.footer-twitter {
+  background-position: -6px -5px;
+}
+/* line 68, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-social-media-links .link-image.footer-instagram {
+  background-position: -99px -5px;
+}
+/* line 69, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-social-media-links .link-image.footer-linkedin {
+  background-position: -52px -5px;
+}
+/* line 70, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-social-media-links .link-image.footer-vimeo {
+  background-position: -146px -5px;
+}
+/* line 73, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-download-app-img-container {
+  width: 240px;
+  margin-bottom: 20px;
+  float: right;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.footer .footer-download-app-img-container:before, .footer .footer-download-app-img-container:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.footer .footer-download-app-img-container:after {
+  clear: both;
+}
+/* line 79, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-download-app-img-container .footer-download-app-img:first-child {
+  margin-right: 20px;
+}
+/* line 84, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-download-app-img {
+  width: 110px;
+  height: 34px;
+  float: left;
+}
+/* line 89, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.footer .footer-download-app-img img {
+  max-width: 100%;
+}
+
+/* line 95, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.copyright-and-legal {
+  background: #2e3742;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 5%;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.copyright-and-legal:before, .copyright-and-legal:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.copyright-and-legal:after {
+  clear: both;
+}
+/* line 101, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.copyright-and-legal p, .copyright-and-legal a {
+  font-size: 14px;
+  color: #7B90AB;
+  margin: 0;
+}
+/* line 106, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.copyright-and-legal .copyright {
+  float: left;
+}
+/* line 107, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+.copyright-and-legal .legal {
+  float: right;
+}
+
+@media (max-width: 850px) {
+  /* line 112, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .footer .footer-social-media-links {
+    position: static;
+    float: left;
+    margin: 20px 0 0 50px;
+  }
+  /* line 116, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .footer .footer-social-media-links a {
+    margin: 0 5px;
+  }
+  /* line 118, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .footer .footer-download-app-img-container {
+    margin: 20px 0 0 50px;
+    float: left;
+  }
+}
+@media (max-width: 640px) {
+  /* line 110, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .footer {
+    text-align: center;
+    padding-bottom: 120px;
+    position: relative;
+  }
+  /* line 127, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .footer .vertical-logo {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -54px;
+  }
+  /* line 133, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .footer .footer-site-links {
+    float: none;
+    width: 100%;
+  }
+  /* line 136, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .footer .footer-site-links a {
+    display: inline-block;
+    margin: 0 6px;
+  }
+  /* line 141, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .footer .footer-support-links {
+    float: none;
+    clear: left;
+    margin: 20px 0;
+  }
+  /* line 146, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .footer .footer-social-media-links {
+    float: none;
+    position: static;
+    margin: 0 auto;
+  }
+  /* line 151, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .footer .footer-download-app-img-container {
+    float: none;
+    margin: 0 auto 20px auto;
+  }
+}
+
+@media (max-width: 700px) {
+  /* line 161, ../../app/assets/stylesheets/horse/public-pages/_footer.scss */
+  .copyright-and-legal .copyright, .copyright-and-legal .legal {
+    float: none;
+    text-align: center;
+  }
+}
+
+/* line 1, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 5% 100px 5%;
+  text-align: center;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.investors .venture-partners:before, .investors .venture-partners:after, .investors .angel-investors:before, .investors .angel-investors:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.investors .venture-partners:after, .investors .angel-investors:after {
+  clear: both;
+}
+/* line 8, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors .venture-partner, .investors .angel-investor {
+  float: left;
+  border: 2px solid #f3f6f7;
+}
+/* line 12, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors .venture-partner .name, .investors .angel-investor .name {
+  font-size: 22px;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 24px 0;
+}
+/* line 18, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors .venture-partner .description, .investors .angel-investor .description {
+  display: block;
+  max-width: 250px;
+  margin: 0 auto 0 auto;
+  padding: 16px 5px;
+  font-size: 14px;
+  border: 2px solid #f3f6f7;
+  border-width: 2px 0 2px 0;
+}
+/* line 28, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors .venture-partner img, .investors .angel-investor img {
+  width: 100%;
+}
+/* line 30, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors .venture-partner .twitter-link, .investors .angel-investor .twitter-link {
+  display: inline-block;
+  width: 24px;
+  height: 20px;
+  margin: 24px 0;
+  background: url("/assets/public-pages/homepage-twitter-icon.png");
+}
+/* line 36, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors .venture-partner .twitter-link.missing, .investors .angel-investor .twitter-link.missing {
+  width: 0;
+}
+/* line 40, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors .venture-partner {
+  width: 49%;
+  margin-left: 2%;
+}
+/* line 43, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors .venture-partner:first-child {
+  margin-left: 0;
+}
+/* line 46, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors .angel-investor {
+  width: 23.5%;
+  margin: 30px 0 0 2%;
+}
+/* line 49, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+.investors .angel-investor:first-child {
+  margin-left: 0;
+}
+@media (max-width: 640px) {
+  /* line 53, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+  .investors .venture-partner, .investors .angel-investor {
+    width: 47.5%;
+    margin-left: 5%;
+  }
+  /* line 57, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+  .investors .angel-investor.row-start {
+    margin-left: 0;
+  }
+}
+@media (max-width: 550px) {
+  /* line 60, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+  .investors .venture-partner {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  /* line 63, ../../app/assets/stylesheets/horse/public-pages/_investor-tiles.scss */
+  .investors .venture-partner:first-child {
+    margin-top: 0;
+  }
+}
+
+/* line 2, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .hero {
+  background-image: url(http://vts.com/assets/public-pages/terms-hero-bg.jpg);
+}
+/* line 4, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .hero .hero-header h3 {
+  font-size: 18px;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  letter-spacing: normal;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* line 15, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .double-columns, .terms .single-column {
+  max-width: 1280px;
+  padding: 50px 5%;
+  margin: 0 auto;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.terms .double-columns:before, .terms .double-columns:after, .terms .single-column:before, .terms .single-column:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.terms .double-columns:after, .terms .single-column:after {
+  clear: both;
+}
+/* line 20, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .double-columns .column, .terms .single-column .column {
+  float: left;
+  width: 47.5%;
+  margin-left: 5%;
+}
+/* line 24, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .double-columns .column:first-child, .terms .single-column .column:first-child {
+  margin-left: 0;
+}
+/* line 28, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .single-column {
+  display: none;
+}
+/* line 30, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms h3 {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  color: #394351;
+  text-transform: uppercase;
+}
+/* line 38, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .terms-footer {
+  text-align: center;
+  padding: 0px 5% 60px 5%;
+}
+/* line 39, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .terms-footer p {
+  font-size: 12px;
+  margin: 0;
+}
+/* line 48, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .terms-form {
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 51, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .terms-form label, .terms .terms-form .fieldset-legend {
+  color: #394351;
+  margin-left: 10px;
+}
+/* line 55, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .terms-form .btn {
+  display: block;
+  margin: 20px auto 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 1.5;
+  font-size: 11px;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  border: 2px solid #7B90AB;
+  background: white;
+  border-radius: 3px;
+  padding: 5px 8px;
+}
+/* line 69, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+.terms .terms-flash {
+  text-align: center;
+  background: #FE5D5D;
+  font-size: 14px;
+}
+@media (max-width: 800px) {
+  /* line 77, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+  .terms .single-column {
+    display: block;
+  }
+  /* line 78, ../../app/assets/stylesheets/horse/public-pages/_terms.scss */
+  .terms .double-columns {
+    display: none;
+  }
+}
+
+/* line 2, ../../app/assets/stylesheets/horse/public-pages/_privacy.scss */
+.privacy .hero {
+  background-image: url(http://vts.com/assets/public-pages/privacy-hero-bg.jpg);
+}
+/* line 4, ../../app/assets/stylesheets/horse/public-pages/_privacy.scss */
+.privacy .privacy-statement {
+  font-size: 26px;
+  color: #5f7695;
+  text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 100px 5% 50px 5%;
+}
+/* line 13, ../../app/assets/stylesheets/horse/public-pages/_privacy.scss */
+.privacy .privacy-lists {
+  max-width: 1280px;
+  margin: 0 auto 100px auto;
+  padding: 0 5%;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.privacy .privacy-lists:before, .privacy .privacy-lists:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.privacy .privacy-lists:after {
+  clear: both;
+}
+/* line 20, ../../app/assets/stylesheets/horse/public-pages/_privacy.scss */
+.privacy .privacy-list {
+  list-style: none;
+  float: left;
+  width: 47.5%;
+  padding: 0 0 0 10px;
+  margin: 0 0 0 5%;
+}
+/* line 26, ../../app/assets/stylesheets/horse/public-pages/_privacy.scss */
+.privacy .privacy-list:first-child {
+  margin: 0;
+}
+/* line 29, ../../app/assets/stylesheets/horse/public-pages/_privacy.scss */
+.privacy li {
+  padding-left: 10px;
+  text-indent: -.7em;
+  font-size: 18px;
+  font-weight: 400;
+  color: #7B90AB;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+/* line 37, ../../app/assets/stylesheets/horse/public-pages/_privacy.scss */
+.privacy li:before {
+  content: "•";
+  font-size: 18px;
+  padding-right: 5px;
+  color: #394351;
+}
+@media (max-width: 640px) {
+  /* line 46, ../../app/assets/stylesheets/horse/public-pages/_privacy.scss */
+  .privacy .privacy-list {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* line 3, ../../app/assets/stylesheets/horse/public-pages/_password-pages.scss */
+.reset-password .hero,
+.set-password .hero {
+  background-image: url(http://vts.com/assets/public-pages/password-hero-bg.jpg);
+}
+/* line 5, ../../app/assets/stylesheets/horse/public-pages/_password-pages.scss */
+.reset-password .alert-error,
+.set-password .alert-error {
+  margin-bottom: 10px;
+}
+/* line 9, ../../app/assets/stylesheets/horse/public-pages/_password-pages.scss */
+.reset-password .set-password-heading,
+.set-password .set-password-heading {
+  text-align: center;
+}
+/* line 13, ../../app/assets/stylesheets/horse/public-pages/_password-pages.scss */
+.reset-password .reset-password-form,
+.reset-password .set-password-form,
+.set-password .reset-password-form,
+.set-password .set-password-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px 5%;
+}
+/* line 21, ../../app/assets/stylesheets/horse/public-pages/_password-pages.scss */
+.reset-password input[type='password'],
+.set-password input[type='password'] {
+  margin-bottom: 20px;
+  font-size: 18px;
+  width: 100%;
+}
+/* line 27, ../../app/assets/stylesheets/horse/public-pages/_password-pages.scss */
+.reset-password .reset-password-form-button,
+.reset-password .set-password-form-button,
+.set-password .reset-password-form-button,
+.set-password .set-password-form-button {
+  display: block;
+  margin: 0 auto;
+}
+/* line 33, ../../app/assets/stylesheets/horse/public-pages/_password-pages.scss */
+.reset-password .reset-password-form-error,
+.reset-password .set-password-form-error,
+.set-password .reset-password-form-error,
+.set-password .set-password-form-error {
+  background: #FE5D5D;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* line 2, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours strong {
+  font-weight: 500;
+}
+/* line 3, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .hero {
+  overflow: hidden;
+  position: relative;
+  background: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/public-pages/videotours/hero-c6baba8d88b6f27f1dcef2b2363f510b.jpg) no-repeat;
+  color: white;
+  background-size: cover;
+}
+/* line 10, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .hero .hero-bg {
+  width: 100%;
+}
+/* line 14, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .hero .hero-heading-wrap {
+  position: absolute;
+  padding: 50px;
+  height: calc(100% - 100px);
+  width: calc(100% - 100px);
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+  background: url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/public-pages/videotours/angle-t-l-9a3768f6e6e2745638601056cffefd88.png) no-repeat 0 0, url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/public-pages/videotours/angle-t-r-5e3ca32e7ed34746a30da9cc16203407.png) no-repeat 100% 0, url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/public-pages/videotours/angle-b-r-195ca9404d26af64a235109c4f498aed.png) no-repeat 100% 100%, url(https://vts-herokuapp-com.global.ssl.fastly.net/assets/public-pages/videotours/angle-b-l-d46893da8df28f4299fc4d28eaef3e77.png) no-repeat 0 100%;
+}
+/* line 25, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .hero .hero-heading {
+  padding: 50px;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+/* line 30, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .hero .hero-heading .get-started-button {
+  margin-top: 30px;
+}
+/* line 33, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .hero .hero-prompt {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 20px;
+  font-size: 45px;
+  z-index: 1;
+  cursor: pointer;
+}
+/* line 43, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .hero:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(14, 59, 76, 0.65);
+}
+@media (max-width: 720px) {
+  /* line 54, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .hero .hero-heading {
+    font-size: 28px;
+    padding: 0 0 20px 0;
+  }
+}
+@media (max-width: 575px) {
+  /* line 60, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .hero .hero-heading-wrap {
+    background: none;
+    padding: 0;
+  }
+  /* line 64, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .hero .hero-heading {
+    font-size: 22px;
+  }
+  /* line 65, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .hero .hero-prompt {
+    display: none;
+  }
+  /* line 66, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .hero .hero-bg {
+    opacity: 0;
+  }
+}
+@media (max-width: 450px) {
+  /* line 69, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .hero .hero-heading {
+    font-size: 18px;
+  }
+}
+/* line 73, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videobenefits {
+  padding: 120px 0;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.videotours .videobenefits:before, .videotours .videobenefits:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.videotours .videobenefits:after {
+  clear: both;
+}
+/* line 79, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videobenefits .videobenefit {
+  position: relative;
+  text-align: center;
+  width: 25%;
+  float: left;
+  padding: 0 20px 30px 20px;
+}
+/* line 85, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videobenefits .videobenefit img {
+  max-width: 150px;
+  width: 100%;
+}
+/* line 90, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videobenefits .videobenefit .videobenefit-view-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+}
+/* line 98, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videobenefits .videobenefit-description {
+  max-width: 270px;
+  font-size: 16px;
+  margin: 20px auto;
+}
+@media (max-width: 1000px) {
+  /* line 73, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videobenefits {
+    max-width: 800px;
+  }
+  /* line 107, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videobenefits .videobenefit {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  /* line 110, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videobenefits .videobenefit:nth-of-type(3) {
+    clear: left;
+  }
+}
+@media (max-width: 550px) {
+  /* line 73, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videobenefits {
+    padding: 30px 0 0 0;
+  }
+  /* line 117, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videobenefits .videobenefit {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+/* line 124, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes {
+  margin: 0 auto;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.videotours .videotypes:before, .videotours .videotypes:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.videotours .videotypes:after {
+  clear: both;
+}
+/* line 128, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype {
+  width: 33.33%;
+  float: left;
+  position: relative;
+}
+/* line 134, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-overlay {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 143, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-icon {
+  font-size: 50px;
+  font-weight: 100;
+  display: inline-block;
+  color: #FFFFFF;
+}
+/* line 150, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-img {
+  width: 100%;
+}
+/* line 154, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-title {
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  top: 45%;
+  padding: 20px 0;
+}
+/* line 162, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-extra-playbutton-button,
+.videotours .videotypes .videotype-playbutton,
+.videotours .videotypes .videotype-plusbutton {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  color: white;
+  text-align: center;
+  background: #26BCE7;
+  border-radius: 50%;
+  padding: 7px 0 0 3px;
+  font-size: 20px;
+  display: inline-block;
+}
+/* line 177, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-plusbutton {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 6px 0 0 1px;
+}
+/* line 183, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-extra-overlay {
+  transition: color 0.3s ease, height 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #F5F5F5;
+  text-align: center;
+  height: 100%;
+  opacity: 0;
+  overflow: hidden;
+}
+/* line 195, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-extra {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 201, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-description {
+  font-size: 16px;
+  padding: 0 30px 30px 30px;
+}
+/* line 206, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-extra-playbutton {
+  cursor: pointer;
+}
+/* line 210, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-extra-playbutton-button {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 215, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype-extra-playbutton-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 10px;
+}
+/* line 222, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotypes .videotype:hover .videotype-extra-overlay {
+  opacity: 1;
+}
+@media (max-width: 1150px) {
+  /* line 226, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videotypes .videotype {
+    width: 50%;
+  }
+}
+@media (max-width: 750px) {
+  /* line 230, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videotypes .videotype {
+    width: 100%;
+  }
+}
+@media (max-width: 720px) {
+  /* line 234, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videotypes .videotype-icon {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  /* line 239, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videotypes .videotype-title {
+    font-size: 28px;
+    padding: 5px 0;
+  }
+}
+@media (max-width: 500px) {
+  /* line 245, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videotypes .videotype-extra-overlay {
+    display: none;
+  }
+}
+/* line 249, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videoclients {
+  padding: 120px 0 90px 0;
+}
+/* line 252, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videoclients .videoclient-heading {
+  text-align: center;
+  padding: 0 20px 110px 20px;
+  position: relative;
+}
+/* line 258, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videoclients .videoclient-logos {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 264, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videoclients .videoclient-logo {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 30px 30px 30px;
+  max-width: 100%;
+}
+@media (max-width: 550px) {
+  /* line 249, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videoclients {
+    padding: 50px 0;
+  }
+  /* line 273, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videoclients .videoclient-heading {
+    font-size: 28px;
+  }
+}
+/* line 277, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.videotours .videosamples:before, .videotours .videosamples:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.videotours .videosamples:after {
+  clear: both;
+}
+/* line 288, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-carousel {
+  width: 2800px;
+  position: relative;
+  left: 50%;
+  margin-left: -1400px;
+}
+/* line 24, ../../app/assets/stylesheets/horse/_common.scss */
+.videotours .videosamples .videosample-carousel:before, .videotours .videosamples .videosample-carousel:after {
+  content: '';
+  display: table;
+}
+/* line 28, ../../app/assets/stylesheets/horse/_common.scss */
+.videotours .videosamples .videosample-carousel:after {
+  clear: both;
+}
+/* line 296, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample {
+  float: left;
+  width: 900px;
+  position: relative;
+}
+/* line 301, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample.middle {
+  margin: 0 50px;
+}
+/* line 303, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample.middle .videosample-overlay {
+  display: none;
+}
+/* line 307, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-buttons {
+  color: #C5CBD4;
+  position: absolute;
+  top: 50%;
+  font-size: 50px;
+  margin-top: -25px;
+  cursor: pointer;
+  left: 50%;
+  z-index: 1;
+  width: 1000px;
+  margin-left: -500px;
+}
+/* line 320, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-prev {
+  float: left;
+}
+/* line 321, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-next {
+  float: right;
+}
+/* line 323, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-radio-buttons {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+/* line 329, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-radio-button {
+  height: 10px;
+  width: 10px;
+  background: #C5CBD4;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+}
+/* line 338, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-radio-button.active {
+  background: #26BCE7;
+}
+/* line 341, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-overlay {
+  background: #FFFFFF;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: .8;
+  z-index: 1;
+}
+/* line 352, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-img {
+  width: 100%;
+}
+/* line 356, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-subtitle {
+  font-size: 16px;
+}
+/* line 360, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-description {
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* line 369, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-icon {
+  font-size: 50px;
+  font-weight: 100;
+}
+/* line 374, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-playbutton {
+  margin-top: 30px;
+  cursor: pointer;
+}
+/* line 379, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-playbutton-button {
+  height: 40px;
+  width: 40px;
+  color: white;
+  text-align: center;
+  background: #26BCE7;
+  border-radius: 50%;
+  padding: 7px 0 0 3px;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 392, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videosamples .videosample-playbutton-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+}
+@media (max-width: 1000px) {
+  /* line 399, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videosamples .videosample-carousel {
+    width: calc(100%*3);
+    margin-left: calc(-75%*2);
+  }
+  /* line 403, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videosamples .videosample {
+    width: 33.33%;
+  }
+  /* line 405, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videosamples .videosample.middle {
+    margin: 0;
+  }
+  /* line 408, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videosamples .videosample-buttons {
+    width: 100%;
+    margin-left: 0;
+    left: 0;
+    color: white;
+  }
+}
+@media (max-width: 400px) {
+  /* line 417, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videosamples .videosample-icon {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  /* line 421, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+  .videotours .videosamples .videosample-title {
+    font-size: 28px;
+  }
+}
+/* line 427, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .video-product-description {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 50px 20px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 25px;
+}
+/* line 436, ../../app/assets/stylesheets/horse/public-pages/_videotours.scss */
+.videotours .videotours-leadfeed-example {
+  display: block;
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

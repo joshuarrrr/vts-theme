@@ -1,0 +1,16 @@
+{
+  "name": "vtstheme",
+  "version": "0.1.0",
+  "description": "(A custom WordPress theme created for VTS)",
+  "license": "MIT",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/joshuarrrr"
+  },
+  "private": true,
+  "dependencies": {
+    "foundation": "latest",
+    "sass-burger": "~1.2.1"
+  }
+}

@@ -1,0 +1,449 @@
+/*!!
+Theme Name: vtstheme
+Author: Ikayzo
+Author URI: http://ikayzo.com
+Description: Customized WordPress theme for vtstheme
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+ vtstheme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/**
+ * Vendor
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,500,500italic,400italic,400,700,700italic,900,900italic);
+@import "settings";
+@import "normalize";
+@import "foundation";
+@import "burger";
+
+/**
+ * Utility
+ */
+
+/**
+ * Base
+ */
+@import "vts-site";
+@import "colors";
+// @import url(//fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,300italic,400italic,500italic,700italic,900italic);
+
+/**
+ * Accessibility
+ */
+
+/* Text meant only for screen readers */
+.says,
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+}
+
+/* must have higher specificity than alternative color schemes inline styles */
+.site .skip-link {
+  background-color: $bg1;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2);
+  color: $btn;
+  display: block;
+  font: bold 14px/normal "Noto Sans", sans-serif;
+  left: -9999em;
+  outline: none;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  text-transform: none;
+  top: -9999em;
+}
+
+.logged-in .site .skip-link {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  font: bold 14px/normal "Open Sans", sans-serif;
+}
+
+.site .skip-link:focus {
+  clip: auto;
+  height: auto;
+  left: 6px;
+  top: 7px;
+  width: auto;
+  z-index: 100000;
+}
+
+
+
+p {
+  color: $body1;
+  font-weight: 400;
+}
+
+a {
+  color: $btn;
+
+  &:hover,
+  &:focus {
+    color: $btn-highlight;
+  }
+}
+
+.horizontal-logo {
+  background: url('https://vts-herokuapp-com.global.ssl.fastly.net/assets/public-pages/logo-horizontal-78f6c7ad428dca14308097ba582a02ec.png') no-repeat;
+  background-color: #3B465A;
+  background-position: center;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin: 0;
+  height: 3em;
+}
+
+@media #{$medium-up} {
+  .horizontal-logo {
+    background-color: initial;
+    float: left;
+    height: 25px;
+    margin: 20px 0 0 5%;
+    width: 114px;
+  }
+}
+
+.splash {
+  background-image: url('http://vts.com/assets/public-pages/testimonials-photo-hero.png');
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.site-branding {
+  padding: 65px 5% 55px;
+}
+
+@media #{$medium-up} {
+  .site-branding {
+    padding: 125px 5%;
+  }
+}
+
+.main-navigation .nav-menu {
+  background: $nav;
+  display: none;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 3em;
+  width: 100%;
+
+  li {
+    padding: 1em 0;
+  }
+
+  a {
+    color: $white;
+  }
+
+  .menu-item-home a {
+    color: $btn;
+  }
+}
+
+.main-navigation.toggled .nav-menu {
+  display: block;
+}
+
+@media #{$medium-up} {
+  .main-navigation {
+    border-bottom: 1px solid $line3;
+    text-align: center;
+  }
+
+  .menu {
+    margin: 0;
+  }
+
+  .main-navigation .nav-menu {
+    background: none;
+    display: block;
+    position: static;
+
+    li {
+      padding: 0;
+    }
+
+    a {
+      color: $sub-meta;
+    }
+
+    .menu-item-home a {
+      border-bottom: 3px solid $btn;
+      padding-bottom: 25px;
+      margin-bottom: 0;
+    }
+  }
+
+  .menu-item {
+    display: inline-block;
+    font-family: "Roboto", Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    margin: 25px 3%;
+    padding: 0;
+    text-transform: uppercase;      
+    
+    a {
+      color: $sub-meta;
+    }
+
+    a:hover {
+      color: $btn;
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+}
+
+.site-title, .site-title a {
+  color: $white;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  text-align: center;
+  text-transform: uppercase; 
+}
+
+.site-description {
+  color: $white;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+}
+
+.menu-toggle, .menu-toggle:hover, .menu-toggle:focus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: none;
+  height: 3em;
+  border: 0;
+  padding: 0 12px;
+  margin: 0;
+}
+
+.burger-icon {
+  @include burger(25px, 3px, 5px, $white);
+}
+
+.main-navigation.toggled .burger-icon {
+  @include burger-to-cross;
+}
+
+.home .site-content {
+  margin: 30px auto;
+  // font: 16px sans-serif;
+  overflow: auto;
+  width: 94%;
+}
+
+.single .site-content {
+  margin: 30px auto;
+  overflow: auto;
+  width: 90%;
+}
+
+.home .post {
+  background-color: $bg1;
+  border: 1px solid $line2;
+  display: block;
+  margin-bottom: 2em;
+  overflow: auto;
+  // padding-bottom: 15px;
+}
+
+.home .post:last-child {
+  margin-bottom: 0;
+}
+
+@media #{$medium-up} {
+  .home .post {
+    font-family: "Roboto", Verdana, Geneva, sans-serif;
+    margin-bottom: 50px;
+    padding: 0px;
+    border: 1px solid $line2;
+  }
+
+  .home .post {
+    max-height: 340px;
+    overflow: hidden;
+  }
+}
+
+.home .post .entry-content {
+  padding: 1.5em 1em 1.5em;
+}
+
+@media #{$medium-up} {
+  .home .post .entry-thumbnail {
+    float: left;
+    width: 50%;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      float: left;
+      clear: left;
+      margin-right: 15px;
+      width: 95%;
+    }
+  }
+
+  .home .post:nth-child(2n) .entry-thumbnail {
+    float: right;
+
+    img {
+      float: right;
+      clear: right;
+      margin-left: 15px;
+      margin-right: 0;
+    }
+  }
+
+  .home .post .entry-content {
+    width: 50%;
+    float: right;
+    padding: 0 2.5% 0 0;
+  }
+
+  .home .post:nth-child(2n) .entry-content {
+    float: left;
+    padding: 0 0 0 2.5%;
+  }
+
+  .single .entry-content {
+    float: left;
+    width: 65%;
+  }
+}
+
+.post .entry-meta {
+  border-bottom: 1px solid $btn;
+  color: #A4AEBB;
+  display: inline-block;
+  font-size: $paragraph-font-size * .8;
+  padding-bottom: 1em;
+}
+
+@media #{$medium-up} {
+  .post .entry-meta {
+    border-bottom: 2px solid $btn;
+    font-size: $paragraph-font-size * .9;
+    padding-left: 5%;
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -5%;
+  }
+}
+
+.home .post .entry-title {
+  font-size: $h3-font-size - $h3-font-reduction;
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-weight: 500;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $line4;
+
+  a {
+    color: $body1;
+  }
+}
+
+@media #{$medium-only} {
+  .home .post .entry-title {
+    font-size: $h3-font-size - $h3-font-reduction;
+  }
+}
+
+@media #{$large-up} {
+  .home .post .entry-title {
+    font-size: 33.6px;
+    line-height: 1.35em;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+}
+
+.single .entry-title {
+  font-family: "Roboto", Verdana, Geneva, sans-serif;
+  font-size: rem-calc(38);
+  font-weight: 300;
+}
+
+.post .entry-summary p {
+  margin: 1em 0 0;
+  line-height: 1.8em;
+  // letter-spacing: -0.01em;
+  font-size: $paragraph-font-size;
+  color: $body1;
+  font-weight: 400;
+}
+
+@media #{$medium-up} {
+  .post .entry-summary p {
+    font-size: $paragraph-font-size * 1.1;
+    line-height: 180%;
+    margin: 25px 0;
+  }
+}
+
+.post .read-more {
+  display: block;
+  font-size: $paragraph-font-size;
+  font-weight: 500;
+  margin-top: 1em;
+  text-align: right;
+}
+
+.entry-footer {
+  clear: both;
+}
+
+// .filled-button, .outline-button {
+//   letter-spacing: 1.5;
+//   color: $white;
+//   border-radius: 3px;
+//   cursor: pointer;
+//   display: inline-block;
+// }
+
+// .filled-button {
+//   padding: 10px 40px;
+//   background: $alert-good;
+//   font-weight: 500;
+// }
+
+// .get-started {
+//   background: #EBEFF3;
+//   text-align: center;
+//   padding: 80px 5%;
+
+//   h2 {
+//     font-size: 35px;
+//     font-weight: 400;
+//   }
+
+//   .filled-button {
+//     margin: 30px auto 0 auto;
+//   }
+// }
+
+/**
+ * Modules
+ */
+
+/**
+ * Pages
+ */
