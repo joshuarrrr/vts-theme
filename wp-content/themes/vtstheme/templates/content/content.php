@@ -20,7 +20,7 @@
 			<?php if ( 'post' === get_post_type() ) : ?>
 			<div class="entry-meta">
 				<?php vtstheme_posted_on(); ?>
-				<?php vtstheme_posted_in_category(); ?>
+				<!-- <?php vtstheme_posted_in_category(); ?> -->
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
 			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
@@ -39,12 +39,16 @@
 				) );
 			?>
 
+			<?php vtstheme_posted_in_category(); ?>
+
 			<?php
 				wp_link_pages( array(
 					'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'vtstheme' ),
 					'after'  => '</div>',
 				) );
 			?>
+
+
 		</div><!-- .entry-summary -->
 
 		<!-- <footer class="entry-footer">

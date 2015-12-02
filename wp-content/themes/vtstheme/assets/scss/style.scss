@@ -113,20 +113,14 @@ h2 {
     background: url('https://vts-herokuapp-com.global.ssl.fastly.net/assets/public-pages/logo-horizontal-78f6c7ad428dca14308097ba582a02ec.png') no-repeat;
     background-position: center;
     display: inline-block;
-    height: 25px;
-    width: 114px;
+    // height: 25px;
+    // width: 114px;
+
+    height: 20px;
+    width: 92px;
+    background-size: contain;
   }
 
-  &:after {
-    content: 'Blog';
-    display: inline-block;
-    font-size: 21px;
-    line-height: 18px;
-    margin: 3.5px 0 3.5px 10px;
-    padding-left: 10px;
-    border-left: 2px $white solid;
-    vertical-align: top;
-  }
 
   &:hover {
     color: $white;
@@ -174,10 +168,32 @@ h2 {
     padding: 0;
     text-align: left;
     width: 250px;
+
+    font-size: 10px;
+    line-height: 10px;
     
     .logo {
       height: 25px;
       width: 114px;
+
+      height: 20px;
+      width: 92px;
+      background-size: contain;
+    }
+
+    &:after {
+      content: 'Blog';
+      display: inline-block;
+      // font-size: 21px;
+      // line-height: 18px;
+      // margin: 3.5px 0 3.5px 10px;
+      // padding-left: 10px;
+      font-size: 16px;
+      line-height: 13px;
+      margin: 3.5px 0 3.5px 5px;
+      padding-left: 5px;
+      border-left: 2px $white solid;
+      vertical-align: top;
     }
   }
 
@@ -189,6 +205,7 @@ h2 {
     display: block;
     text-align: right;
     margin: 20px 5% 0 0;
+    padding-bottom: 0;
     float: right;
     font-size: 20px;
     line-height: 1em;
@@ -724,12 +741,29 @@ body:not(.single) .site-content .post .entry-meta {
     border-bottom: 1px solid $btn;
   }
 
-  .cat-links {
-    float: right;
+  // .cat-links {
+  //   float: right;
+  // }
+}
+
+.cat-links {
+  position: relative;
+  padding-bottom: 0;
+  top: -22.75px;
+
+  a {
+    color: #A4AEBB;
   }
 }
 
 @media #{$medium-up} {
+  .cat-links {
+    padding-left: 5%;
+    margin-left: -5%;
+    padding-bottom: 0;
+    top: -3.5em;
+  }
+
   body:not(.single) .site-content .post .entry-meta {
     // border-bottom: 2px solid $btn;
     font-size: $paragraph-font-size * .9;
@@ -742,7 +776,7 @@ body:not(.single) .site-content .post .entry-meta {
     .cat-links, .published {
       padding-left: 5%;
       padding-bottom: 20px;
-      margin-left: -5%;
+      margin-left: -5.2%;
     }
 
     .published {
@@ -871,7 +905,7 @@ body:not(.single) .site-content .post .entry-title {
 .post .read-more {
   display: block;
   font-size: $paragraph-font-size;
-  font-weight: 500;
+  font-weight: 400;
   margin-top: 1em;
   text-align: right;
 }
