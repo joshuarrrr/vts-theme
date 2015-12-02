@@ -13,9 +13,9 @@
 
 	</div><!-- #content -->
 	
-	<?php if ( ! is_single() ) : ?>
+	<!-- <?php if ( ! is_single() ) : ?>
 	<?php get_search_form(); ?>
-	<?php endif; ?>
+	<?php endif; ?> -->
 
 	<?php if ( ! is_home() && ! is_front_page() ) : ?>
 	<?php related_posts(); ?>

@@ -161,6 +161,11 @@ h2 {
   }
 }
 
+.single .social-follow,
+.single .subscribe-button {
+  display: none;
+}
+
 @media #{$medium-up} {
   .horizontal-logo {
     background-color: initial;
@@ -174,6 +179,10 @@ h2 {
       height: 25px;
       width: 114px;
     }
+  }
+
+  .single .social-follow {
+    display: block;
   }
 
   .social-follow {
@@ -199,7 +208,7 @@ h2 {
 
     .fa {
       color: inherit;
-      margin: 0 10px;
+      margin: 0 5px;
     }
 
     .subscribe-button {
@@ -239,7 +248,7 @@ h2 {
     overflow: hidden;
     height: 70vh;
     // margin-top: 0;
-    padding-top: 51px;
+    // padding-top: 51px;
 
     background-position: center;
     background-size: cover;
@@ -402,6 +411,10 @@ h2 {
   @include burger-to-cross;
 }
 
+.site-content {
+  max-width: 1500px;
+}
+
 body:not(.single) .site-content {
   margin: 30px auto;
   // font: 16px sans-serif;
@@ -496,8 +509,9 @@ body:not(.single) .site-content .post .entry-content {
 
 .widget {
     margin: 0 auto 30px;
-    min-width: 275px;
-    width: 250px;
+    // min-width: 275px;
+    max-width: 100%;
+    width: 321px;
     padding: 25px;
     background-color: $bg2;
 }
@@ -639,8 +653,9 @@ body:not(.single) .site-content .post .entry-content {
   }
 
   #text-2 {
-    min-width: 275px;
-    width: 250px;
+    // min-width: 275px;
+    max-width: 100%;
+    width: 321px;
     padding: 25px;
     border: none;
     margin: 0 auto;
@@ -1019,6 +1034,18 @@ body:not(.home) .yarpp-related {
     font-weight: 700;
     text-transform: uppercase;
   }
+}
+
+.n2-ss-slider h2:after {
+  content: "Read Story";
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  border: 2px $white solid;
+  border-radius: 3px;
+  padding: 5px 29px;
+  width: 75px;
+  margin: 1em auto 0;
 }
 
 // .filled-button, .outline-button {
