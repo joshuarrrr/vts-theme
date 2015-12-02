@@ -27,9 +27,11 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		<?php if ( is_single() ) : ?>
-		<div class="splash">
-			<!-- <?php the_title( '<p class="entry-title">', '</p>' ); ?> -->
-			<?php the_post_thumbnail( 'full' ); ?>
+		<div class="splash" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(<?= wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false )[0] ?>) center/cover;">
+			<div class="site-branding">
+				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			</div>
+			<!-- <?php the_post_thumbnail( 'full' ); ?> -->
 		</div>	
 		<?php else : ?>
 		<?php echo do_shortcode('[smartslider3 slider="1"]'); ?>

@@ -216,13 +216,15 @@ h2 {
 }
 
 // .splash {
-//   background-image: url('http://vts.com/assets/public-pages/testimonials-photo-hero.png');
+//   // background-image: url('http://vts.com/assets/public-pages/testimonials-photo-hero.png');
 //   background-position: center;
 //   background-size: cover;
 //   text-align: center;
 // }
 
 .single .splash {
+  height: 70vh;
+  text-align: center;
   padding-top: 51px;
   
   img {
@@ -232,14 +234,18 @@ h2 {
 
 @media #{$medium-up} {
   .single .splash {
-    height: auto;
-    background: $body1;
+    // height: auto;
+    // background: $body1;
     overflow: hidden;
-    max-height: 200px;
-    margin-top: 0;
+    height: 70vh;
+    // margin-top: 0;
+
+    background-position: center;
+    background-size: cover;
+    text-align: center;
 
     img {
-      margin-top: -40%;
+      // margin-top: -40%;
       opacity: .35;
     }
   }
@@ -247,6 +253,10 @@ h2 {
 
 .site-branding {
   padding: 65px 5% 55px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
 }
 
 .single .site-branding {
@@ -796,7 +806,8 @@ body:not(.single) .site-content .post .entry-title {
 }
 
 .single .entry-title {
-  color: $body1;
+  // color: $body1;
+  color: $white;
   font-family: "Roboto", Verdana, Geneva, sans-serif;
   font-size: rem-calc(38) - $h1-font-reduction;
   font-weight: 300;

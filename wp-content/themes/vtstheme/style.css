@@ -14841,6 +14841,8 @@ h2 {
 }
 
 .single .splash {
+  height: 70vh;
+  text-align: center;
   padding-top: 51px;
 }
 
@@ -14850,20 +14852,23 @@ h2 {
 
 @media only screen and (min-width: 45.7857142857em) {
   .single .splash {
-    height: auto;
-    background: #485367;
     overflow: hidden;
-    max-height: 200px;
-    margin-top: 0;
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
   }
   .single .splash img {
-    margin-top: -40%;
     opacity: .35;
   }
 }
 
 .site-branding {
   padding: 65px 5% 55px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: relative;
 }
 
 .single .site-branding {
@@ -15389,7 +15394,7 @@ body:not(.single) .site-content .post .entry-title a {
 }
 
 .single .entry-title {
-  color: #485367;
+  color: #FFFFFF;
   font-family: "Roboto", Verdana, Geneva, sans-serif;
   font-size: 2rem;
   font-weight: 300;
