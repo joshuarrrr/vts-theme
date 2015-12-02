@@ -17,10 +17,12 @@
 
       $('#share-toggle').mouseover(function() {
         $('.naked-social-share').show(300);
+        $(this).hide(300);
       });
 
       $('#share-toggle').click(function() {
         $('.naked-social-share').show(300);
+        $(this).hide(300);
       });
     }
 
