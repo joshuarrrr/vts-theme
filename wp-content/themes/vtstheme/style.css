@@ -14733,7 +14733,6 @@ h2 {
 }
 
 .horizontal-logo {
-  background-color: #3b465a;
   color: #FFFFFF;
   cursor: pointer;
   display: block;
@@ -14843,7 +14842,6 @@ h2 {
 .single .splash {
   height: 70vh;
   text-align: center;
-  padding-top: 51px;
 }
 
 .single .splash img {
@@ -14854,6 +14852,7 @@ h2 {
   .single .splash {
     overflow: hidden;
     height: 70vh;
+    padding-top: 51px;
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -14889,6 +14888,10 @@ h2 {
   .single .site-description {
     display: block;
   }
+}
+
+.main-navigation {
+  display: none;
 }
 
 .main-navigation .menu {
@@ -14928,7 +14931,6 @@ h2 {
   }
   .main-navigation .nav-menu {
     background: none;
-    display: block;
     position: static;
   }
   .main-navigation .nav-menu li {
@@ -15319,28 +15321,21 @@ body:not(.single) .site-content .post .entry-meta .cat-links {
 }
 
 .single .post .entry-meta {
-  border-bottom: 2px solid #ebeff3;
   color: #95a9c4;
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
   display: inline-block;
   vertical-align: middle;
   width: 100%;
 }
 
-.single .post .entry-meta .entry-date {
-  line-height: 40px;
-}
-
 .single .post .entry-meta .share {
   display: block;
-  margin: 0;
+  margin: 1em 0 0;
 }
 
 .single .post .entry-meta .naked-social-share {
   display: none;
-  margin: 7px 5px;
+  margin: 1em 0 0;
   text-align: center;
 }
 
@@ -15349,12 +15344,22 @@ body:not(.single) .site-content .post .entry-meta .cat-links {
 }
 
 @media only screen and (min-width: 45.7857142857em) {
+  .single .post .entry-meta {
+    border-bottom: 2px solid #ebeff3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .single .post .entry-meta .entry-date {
+    line-height: 40px;
+  }
   .single .post .entry-meta .share {
     display: inline-block;
     float: right;
+    margin: 0;
   }
   .single .post .entry-meta .naked-social-share {
     float: right;
+    margin: 7px 5px;
   }
   .single .post .entry-meta .naked-social-share li {
     margin: 0 5px 0 0;

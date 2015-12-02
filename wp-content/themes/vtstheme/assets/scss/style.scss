@@ -96,7 +96,7 @@ h2 {
 }
 
 .horizontal-logo {
-  background-color: rgba(59,70,90,1);
+  // background-color: rgba(59,70,90,1);
   color: $white;
   cursor: pointer;
   display: block;
@@ -225,7 +225,7 @@ h2 {
 .single .splash {
   height: 70vh;
   text-align: center;
-  padding-top: 51px;
+  // padding-top: 51px;
   
   img {
     width: 100%;
@@ -239,6 +239,7 @@ h2 {
     overflow: hidden;
     height: 70vh;
     // margin-top: 0;
+    padding-top: 51px;
 
     background-position: center;
     background-size: cover;
@@ -281,6 +282,10 @@ h2 {
   }
 }
 
+.main-navigation {
+  display: none;
+}
+
 .main-navigation .menu {
   background: $nav;
   display: none;
@@ -320,7 +325,8 @@ h2 {
 
   .main-navigation .nav-menu {
     background: none;
-    display: block;
+    // display: block;
+
     position: static;
 
     li {
@@ -728,28 +734,25 @@ body:not(.single) .site-content .post .entry-meta {
 }
  
 .single .post .entry-meta {
-  border-bottom: 2px solid $line4;
+  // border-bottom: 2px solid $line4;
   color: $placeholder;
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
+  // padding-bottom: 40px;
   
   display: inline-block;
   vertical-align: middle;
   width: 100%;
 
-  .entry-date {
-    line-height: 40px;
-  }
-
   .share {
     display: block;
-    margin: 0;
+    margin: 1em 0 0;
   }
 
   .naked-social-share {
     display: none;
-    margin: 7px 5px;
+    margin: 1em 0 0;
     text-align: center;
 
     li {
@@ -758,13 +761,23 @@ body:not(.single) .site-content .post .entry-meta {
   }
 
   @media #{$medium-up} {
+    border-bottom: 2px solid $line4;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .entry-date {
+      line-height: 40px;
+    }
+
     .share {
       display: inline-block;
       float: right;
+      margin: 0;
     }
 
     .naked-social-share {
       float: right;
+      margin: 7px 5px;
 
       li {
         margin: 0 5px 0 0;
