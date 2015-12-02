@@ -113,6 +113,23 @@ module.exports = function (grunt) {
           files: '<%= app %>/assets/js/app.js',
           tasks: ['jshint:scripts', 'concat']
         }
+      },
+
+      rsync: {
+        options: {
+          args: ['--verbose'],
+          exclude: [],
+          recursive: true,
+          ssh: true
+        },
+        prod: {
+          options: {
+            src: '<%= app %>',
+            dest: 'joshromero.com/vts-staging/wp-content/themes',
+            host: 'joshuarrrr_shell@joshromero.com',
+            delete: true // Careful this option could cause data loss, read the docs!
+          }
+        }
       }
 
     });
@@ -139,6 +156,11 @@ module.exports = function (grunt) {
     // Default
     grunt.registerTask('default', [
         'build',
+    ]);
+
+    grunt.registerTask('deploy', [
+        'build',
+        'rsync:prod'
     ]);
 
 };
