@@ -16,6 +16,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
 
 <?php wp_head(); ?>
 </head>
@@ -25,16 +26,32 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'vtstheme' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+		<?php if ( is_single() ) : ?>
 		<div class="splash">
-			<a class="horizontal-logo" href="/"></a>
-			<div class="site-branding">
-				<?php if ( is_front_page() && is_home() ) : ?>
-					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php else : ?>
-					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php endif; ?>
-				<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-			</div><!-- .site-branding -->
+			<!-- <?php the_title( '<p class="entry-title">', '</p>' ); ?> -->
+			<?php the_post_thumbnail( 'full' ); ?>
+		</div>	
+		<?php else : ?>
+		<?php echo do_shortcode('[smartslider3 slider="1"]'); ?>
+		<?php endif; ?>
+
+		<a class="horizontal-logo" href="/">
+			<span class="logo"></span>
+		</a>
+		<div class="social-follow">
+			<a href="https://twitter.com/viewthespace">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a href="https://instagram.com/viewthespace/">
+				<i class="fa fa-instagram"></i>
+			</a>
+			<a href="https://www.linkedin.com/company/view-the-space">
+				<i class="fa fa-linkedin "></i>
+			</a>
+			<a href="https://vimeo.com/viewthespace">
+				<i class="fa fa-vimeo"></i>
+			</a>
+			<a class="subscribe-button secondary button" onclick="MktoForms2.loadForm('//app-sj05.marketo.com', '811-SJQ-803', 1175, function (form){MktoForms2.lightbox(form).show();});">Subscribe <i class="fa fa-envelope"></i></a>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

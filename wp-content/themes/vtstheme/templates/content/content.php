@@ -20,18 +20,19 @@
 			<?php if ( 'post' === get_post_type() ) : ?>
 			<div class="entry-meta">
 				<?php vtstheme_posted_on(); ?>
+				<?php vtstheme_posted_in_category(); ?>
 			</div><!-- .entry-meta -->
 			<?php endif; ?>
 			<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 		</header><!-- .entry-header -->
 
-		<div class="entry-summary">
+		<!-- <div class="entry-summary">
 			<?php the_excerpt(); ?>
-		</div><!-- .entry-summary -->
+		</div> --><!-- .entry-summary -->
 
-		<!-- <div class="entry-content">
+		<div class="entry-summary">
 			<?php
-				the_content( sprintf(
+				the_excerpt( sprintf(
 					/* translators: %s: Name of current post. */
 					wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'vtstheme' ), array( 'span' => array( 'class' => array() ) ) ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
@@ -44,7 +45,7 @@
 					'after'  => '</div>',
 				) );
 			?>
-		</div> --><!-- .entry-content -->
+		</div><!-- .entry-summary -->
 
 		<!-- <footer class="entry-footer">
 			<?php vtstheme_entry_footer(); ?>

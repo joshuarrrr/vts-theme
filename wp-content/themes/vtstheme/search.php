@@ -27,7 +27,8 @@ get_header(); ?>
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'templates/content/content', 'search' );
+				// get_template_part( 'templates/content/content', 'search' );
+				get_template_part( 'templates/content/content', '' );
 				?>
 
 			<?php endwhile; ?>

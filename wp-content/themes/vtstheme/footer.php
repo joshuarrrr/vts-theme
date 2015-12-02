@@ -12,6 +12,14 @@
 ?>
 
 	</div><!-- #content -->
+	
+	<?php if ( ! is_single() ) : ?>
+	<?php get_search_form(); ?>
+	<?php endif; ?>
+
+	<?php if ( ! is_home() && ! is_front_page() ) : ?>
+	<?php related_posts(); ?>
+	<?php endif; ?>
 
 	<footer>
 		<div class="get-started">
@@ -66,15 +74,10 @@
 		</p>
 		</div>
 	</footer>
-
-	<!-- <footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'vtstheme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'vtstheme' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'vtstheme' ), 'vtstheme', '<a href="http://automattic.com/" rel="designer">Automattic</a>' ); ?>
-		</div> --><!-- .site-info -->
-	<!-- </footer> --><!-- #colophon -->
 </div><!-- #page -->
+
+<!-- <script src="//app-sj05.marketo.com/js/forms2/js/forms2.min.js"></script> -->
+
 
 <?php wp_footer(); ?>
 

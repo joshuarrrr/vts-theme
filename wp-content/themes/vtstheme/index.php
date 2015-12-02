@@ -24,7 +24,12 @@ get_header(); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
-
+			
+<!-- 			<div class="branding-area">
+				<span class="site-description"><?php bloginfo( 'description' ); ?></span>
+				<a class="button filled-button"><i class="fa fa-download"></i>Download White Paper</a>
+			</div> -->
+			
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -51,5 +56,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

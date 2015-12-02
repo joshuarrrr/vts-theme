@@ -16649,6 +16649,14 @@ return jQuery;
     function init(){
       // Initialize Foundation
       $(document).foundation();
+
+      $('#share-toggle').mouseover(function() {
+        $('.naked-social-share').show(300);
+      });
+
+      $('#share-toggle').click(function() {
+        $('.naked-social-share').show(300);
+      });
     }
 
     // ...happy coding!

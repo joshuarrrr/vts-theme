@@ -135,9 +135,9 @@ function vtstheme_scripts() {
 	wp_enqueue_script( 'vtstheme-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	// JQuery
-	if( !is_admin()){
-		wp_deregister_script('jquery');
-	}
+	// if( !is_admin()){
+	// 	wp_deregister_script('jquery');
+	// }
 
 	// Main
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/script.js', array(), '', true );
