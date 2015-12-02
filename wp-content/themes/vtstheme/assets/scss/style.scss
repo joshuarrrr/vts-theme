@@ -437,6 +437,10 @@ body:not(.single) .site-content .post {
   margin-bottom: 2em;
   overflow: auto;
   // padding-bottom: 15px;
+
+  .entry-thumbnail img {
+    width: 100%;
+  }
 }
 
 body:not(.single) .site-content .post:last-child {

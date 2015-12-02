@@ -15072,6 +15072,10 @@ body:not(.single) .site-content .post {
   overflow: auto;
 }
 
+body:not(.single) .site-content .post .entry-thumbnail img {
+  width: 100%;
+}
+
 body:not(.single) .site-content .post:last-child {
   margin-bottom: 0;
 }
