@@ -36,7 +36,7 @@
 		<?php else : ?>
 <!-- 		<div class="splash">
 <div class="site-branding"> -->
-		<?php echo do_shortcode('[smartslider3 slider="3"]'); ?>
+		<?php echo do_shortcode('[smartslider3 slider="1"]'); ?>
 <!-- 		</div> -->
 		<?php endif; ?>
 

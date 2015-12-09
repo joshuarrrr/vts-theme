@@ -125,8 +125,8 @@ module.exports = function (grunt) {
         prod: {
           options: {
             src: '<%= app %>',
-            dest: 'joshromero.com/vts-staging/wp-content/themes',
-            host: 'joshuarrrr_shell@joshromero.com',
+            dest: 'blog.vts.com/wp-content/themes',
+            host: 'wp_firrt6@blog.vts.com',
             delete: true // Careful this option could cause data loss, read the docs!
           }
         }
