@@ -31,10 +31,13 @@
 			<div class="site-branding">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div>
-			<!-- <?php the_post_thumbnail( 'full' ); ?> -->
+			<?php /*the_post_thumbnail( 'full' );*/ ?>
 		</div>	
 		<?php else : ?>
-		<?php echo do_shortcode('[smartslider3 slider="1"]'); ?>
+<!-- 		<div class="splash">
+<div class="site-branding"> -->
+		<?php echo do_shortcode('[smartslider3 slider="3"]'); ?>
+<!-- 		</div> -->
 		<?php endif; ?>
 
 		<a class="horizontal-logo" href="/">

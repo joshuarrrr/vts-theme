@@ -27,14 +27,14 @@
 			<div class="filled-button get-started-button" id="get-started-footer">Get Started</div>
 		</div>
 		<div class="footer">
-			<a class="vertical-logo" href="/">Data-Driven Leasing™</a>
+			<a class="vertical-logo" href="http://vts.com/">Data-Driven Leasing™</a>
 
 			<div class="footer-site-links">
-				<a href="/team">Team</a>
+				<a href="http://vts.com/team">Team</a>
 				<a href="http://grnh.se/bsl5q4" target="_blank">Careers</a>
-				<a href="/press">Press</a>
-				<a href="/contact">Contact</a>
-				<a href="/testimonials">Testimonials</a>
+				<a href="http://vts.com/press">Press</a>
+				<a href="http://vts.com/contact">Contact</a>
+				<a href="http://vts.com/testimonials">Testimonials</a>
 				<a href="http://blog.vts.com" target="_blank">Blog</a>
 				<a href="http://building.vts.com/" target="_blank">Engineering Blog</a>
 			</div>
@@ -69,8 +69,8 @@
 		<div class="copyright-and-legal">
 		<p class="copyright">© View The Space. 2012–2015. All Rights Reserved. The Standard in LeaseTech™.</p>
 		<p class="legal">
-			<a href="/terms">Terms and Conditions</a> | 
-			<a href="/privacy">Privacy Policy</a>
+			<a href="http://vts.com/terms">Terms and Conditions</a> | 
+			<a href="http://vts.com/privacy">Privacy Policy</a>
 		</p>
 		</div>
 	</footer>
