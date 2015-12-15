@@ -16,7 +16,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
 
 <?php wp_head(); ?>
 </head>
@@ -26,18 +25,38 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'vtstheme' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-		<?php if ( is_single() ) : ?>
+
+		<?php
+		/**
+		 * The header area containing the optional header widget.
+		 *
+		 * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+		 *
+		 * @package vtstheme
+		 */
+		?>
+
+		<?php if ( is_active_sidebar( 'header-1' ) && !is_single() ) : ?>
+		<?php echo dynamic_sidebar( 'header-1' ); ?>
+		<?php elseif ( is_single() ) : ?>
 		<div class="splash" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(<?= wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false )[0] ?>) center/cover;">
 			<div class="site-branding">
 				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 			</div>
 			<?php /*the_post_thumbnail( 'full' );*/ ?>
-		</div>	
+		</div>
 		<?php else : ?>
-<!-- 		<div class="splash">
-<div class="site-branding"> -->
-		<?php echo do_shortcode('[smartslider3 slider="1"]'); ?>
-<!-- 		</div> -->
+		<div class="splash" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(<?= wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false )[0] ?>) center/cover;">
+			<div class="site-branding">
+				<?php
+					if ( is_front_page() && is_home() ) : ?>
+						<h1 class="hero-title"><?php bloginfo( 'name' ); ?></h1>
+					<?php else : ?>
+						<p class="hero-title"><?php bloginfo( 'name' ); ?></p>
+					<?php endif;
+				?>
+			</div>
+		</div>
 		<?php endif; ?>
 
 		<a class="horizontal-logo" href="/">

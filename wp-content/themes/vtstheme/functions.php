@@ -121,6 +121,16 @@ function vtstheme_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html__( 'Header', 'vtstheme' ),
+		'id'            => 'header-1',
+		'description'   => '',
+		'before_widget' => '<div id="%1$s" class="%2$s">',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="widget-title titleless-widget">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'vtstheme_widgets_init' );
 

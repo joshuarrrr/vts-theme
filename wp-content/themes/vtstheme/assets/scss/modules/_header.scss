@@ -155,7 +155,7 @@
 //   height: 70vh;
 // }
 
-.single .splash {
+.splash {
   height: 70vh;
   text-align: center;
   // padding-top: 51px;
@@ -193,11 +193,11 @@
     position: relative;
 }
 
-.single .site-branding {
+.site-branding {
   padding: 25px 5%;
 }
 
-.single .site-description {
+.site-description {
   display: none;
 }
 
@@ -230,6 +230,10 @@
   font-family: "Roboto", Verdana, Geneva, sans-serif;
 }
 
+.titleless-widget {
+  display: none;
+}
+
 .n2-ss-slider h2 a {
   display: inline-block;
 }
@@ -248,7 +252,8 @@
 
 }
 
-.single .entry-title {
+.entry-title, 
+.hero-title {
   // color: $body1;
   color: $white;
   font-family: "Roboto", Verdana, Geneva, sans-serif;
@@ -257,7 +262,8 @@
 }
 
 @media #{$medium-up} {
-  .single .entry-title {
+  .entry-title,
+  .hero-title {
     font-size: rem-calc(50);
   }
 }
