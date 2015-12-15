@@ -15,7 +15,8 @@ module.exports = function (grunt) {
               sourceMap: false,
               outputStyle: 'expanded',
               includePaths: ['<%= vendor %>/foundation/scss',
-                             '<%= vendor %>/sass-burger'
+                             '<%= vendor %>/sass-burger',
+                             '<%= vendor %>/font-awesome/scss'
               ]
           },
           dist: {
@@ -65,6 +66,16 @@ module.exports = function (grunt) {
                ],
           dest: '<%= app %>/script.js',
         },
+      },
+
+      // Copy font_awesome fons
+      copy: {
+          fontAwesome: {
+              expand: true,
+              flatten: true,
+              src: ['<%= vendor %>/font-awesome/fonts/*'],
+              dest: '<%= app %>/assets/fonts'
+          }
       },
 
       // Check js files for errors
@@ -137,6 +148,7 @@ module.exports = function (grunt) {
     // Development
     grunt.registerTask('serve', [
         'jshint',
+        'copy',
         'sass',
         'postcss',
         'concat',
@@ -146,6 +158,7 @@ module.exports = function (grunt) {
     // Build
     grunt.registerTask('build', [
         'jshint',
+        'copy',
         'sass',
         'postcss',
         'cssmin',
