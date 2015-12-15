@@ -1,0 +1,18 @@
+p {
+  color: $body1;
+  font-weight: 400;
+}
+
+a {
+  color: $btn;
+
+  &:hover,
+  &:focus {
+    color: $btn-highlight;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 100;
+}

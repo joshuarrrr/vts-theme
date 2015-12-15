@@ -1,0 +1,100 @@
+.main-navigation .menu {
+  background: $nav;
+  display: none;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top: 3em;
+  width: 100%;
+
+  li {
+    padding: 1em 0;
+  }
+
+  a {
+    color: $white;
+  }
+
+  .menu-item-home a {
+    color: $btn;
+  }
+}
+
+.main-navigation.toggled .nav-menu {
+  display: block;
+  z-index: 5;
+}
+
+@media #{$medium-up} {
+  .main-navigation {
+    border-bottom: 1px solid $line3;
+    text-align: center;
+  }
+
+  .menu {
+    margin: 0;
+  }
+
+  .main-navigation .nav-menu {
+    background: none;
+    // display: block;
+
+    position: static;
+
+    li {
+      padding: 0;
+    }
+
+    a {
+      color: $sub-meta;
+    }
+
+    .menu-item-home a {
+      border-bottom: 3px solid $btn;
+      padding-bottom: 25px;
+      margin-bottom: 0;
+    }
+  }
+
+  .menu-item {
+    display: inline-block;
+    font-family: "Roboto", Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    margin: 25px 3%;
+    padding: 0;
+    text-transform: uppercase;      
+    
+    a {
+      color: $sub-meta;
+    }
+
+    a:hover {
+      color: $btn;
+    }
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+}
+
+.menu-toggle, .menu-toggle:hover, .menu-toggle:focus {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: none;
+  height: 3em;
+  border: 0;
+  padding: 0 12px;
+  margin: 0;
+  z-index: 10;
+}
+
+.burger-icon {
+  @include burger(25px, 3px, 5px, $white);
+}
+
+.main-navigation.toggled .burger-icon {
+  @include burger-to-cross;
+}

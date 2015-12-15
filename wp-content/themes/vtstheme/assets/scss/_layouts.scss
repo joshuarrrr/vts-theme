@@ -1,0 +1,27 @@
+.site-content {
+  max-width: 1500px;
+}
+
+body:not(.single) .site-content {
+  margin: 30px auto;
+  // font: 16px sans-serif;
+  overflow: auto;
+  width: 94%;
+
+  &:before {
+    content: "Latest Posts";
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+
+body:not(.home) .site-content {
+  margin: 30px auto;
+  overflow: auto;
+  width: 90%;
+}
