@@ -75,16 +75,13 @@
 }
 
 .post-listing .entry-meta {
-  color: #A4AEBB;
+  @extend %meta-text;
   display: inline-block;
-  font-size: $paragraph-font-size * .8;
-  
-
   width: 100%;
 
-  .cat-links, .published {
-    padding-bottom: 1em;
-  }
+  // .cat-links, .published {
+  //   padding-bottom: 1em;
+  // }
 
   .published {
     border-bottom: 1px solid $btn;
@@ -101,7 +98,7 @@
   top: -22.75px;
 
   a {
-    color: #A4AEBB;
+    @extend %meta-text;
   }
 }
 
@@ -115,14 +112,15 @@
 
   .post-listing .entry-meta {
     // border-bottom: 2px solid $btn;
-    font-size: $paragraph-font-size * .9;
+    // font-size: $paragraph-font-size * .9;
     
     display: inline-block;
     padding-top: 20px;
     // padding-bottom: 20px;
     
 
-    .cat-links, .published {
+    // .cat-links, 
+    .published {
       padding-left: 5%;
       padding-bottom: 20px;
       margin-left: -5.2%;

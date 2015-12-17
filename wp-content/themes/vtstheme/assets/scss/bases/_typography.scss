@@ -12,3 +12,13 @@
   font-size: 14px;
   font-weight: 500;
 }
+
+%meta-text {
+  // color: #A4AEBB;
+  color: $line1;
+  font-size: $paragraph-font-size * .8;
+
+  @media #{$medium-up} {
+    font-size: $paragraph-font-size * .9;
+  }
+}
