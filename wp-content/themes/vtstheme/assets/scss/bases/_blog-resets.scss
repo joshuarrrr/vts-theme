@@ -1,6 +1,5 @@
 p {
-  color: $body1;
-  font-weight: 400;
+  @extend %body-text;
 }
 
 a {
@@ -13,6 +12,5 @@ a {
 }
 
 h2 {
-  font-size: 28px;
-  font-weight: 100;
+  @extend %h2-text;
 }

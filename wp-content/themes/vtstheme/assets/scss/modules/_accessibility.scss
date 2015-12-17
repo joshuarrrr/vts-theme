@@ -10,11 +10,11 @@
 
 // must have higher specificity than alternative color schemes inline styles
 .site .skip-link {
+  @extend %link-text;
   background-color: $bg1;
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, .2);
   color: $btn;
   display: block;
-  font: bold 14px/normal "Noto Sans", sans-serif;
   left: -9999em;
   outline: none;
   padding: 15px 23px 14px;
@@ -24,8 +24,8 @@
 }
 
 .logged-in .site .skip-link {
+  @extend %link-text;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, .6);
-  font: bold 14px/normal "Open Sans", sans-serif;
 }
 
 .site .skip-link:focus {

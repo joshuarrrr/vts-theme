@@ -1,4 +1,4 @@
-body:not(.single) .site-content .post {
+.post-listing {
   background-color: #fbfbfb;
   border: 1px solid #d7dde3;
   display: block;
@@ -6,11 +6,11 @@ body:not(.single) .site-content .post {
   overflow: auto;
 }
 
-body:not(.single) .site-content .post .entry-thumbnail img {
+.post-listing .entry-thumbnail img {
   width: 100%;
 }
 
-body:not(.single) .site-content .post:last-child {
+.post-listing:last-of-type {
   margin-bottom: 0;
 }
 
@@ -19,25 +19,25 @@ body:not(.single) .site-content .post:last-child {
     content: none;
   }
 
-  body:not(.single) .site-content .post {
+  .post-listing {
     font-family: "Roboto", Verdana, Geneva, sans-serif;
     margin-bottom: 50px;
     padding: 0px;
     border: 1px solid $line2;
   }
 
-  body:not(.single) .site-content .post {
+  .post-listing {
     max-height: 340px;
     overflow: hidden;
   }
 }
 
-body:not(.single) .site-content .post .entry-content {
+.post-listing .entry-content {
   padding: 1.5em 1em 1.5em;
 }
 
 @media #{$medium-up} {
-  body:not(.single) .site-content .post .entry-thumbnail {
+  .post-listing .entry-thumbnail {
     float: left;
     width: 50%;
 
@@ -51,7 +51,7 @@ body:not(.single) .site-content .post .entry-content {
     }
   }
 
-  body:not(.single) .site-content .post:nth-child(2n) .entry-thumbnail {
+  .post-listing:nth-child(2n) .entry-thumbnail {
     float: right;
 
     img {
@@ -62,19 +62,19 @@ body:not(.single) .site-content .post .entry-content {
     }
   }
 
-  body:not(.single) .site-content .post .entry-content {
+  .post-listing .entry-content {
     width: 50%;
     float: right;
     padding: 0 2.5% 0 0;
   }
 
-  body:not(.single) .site-content .post:nth-child(2n) .entry-content {
+  .post-listing:nth-child(2n) .entry-content {
     float: left;
     padding: 0 0 0 2.5%;
   }
 }
 
-body:not(.single) .site-content .post .entry-meta {
+.post-listing .entry-meta {
   color: #A4AEBB;
   display: inline-block;
   font-size: $paragraph-font-size * .8;
@@ -113,7 +113,7 @@ body:not(.single) .site-content .post .entry-meta {
     top: -3.5em;
   }
 
-  body:not(.single) .site-content .post .entry-meta {
+  .post-listing .entry-meta {
     // border-bottom: 2px solid $btn;
     font-size: $paragraph-font-size * .9;
     
@@ -135,7 +135,7 @@ body:not(.single) .site-content .post .entry-meta {
   }
 }
 
-body:not(.single) .site-content .post .entry-title {
+.post-listing .entry-title {
   font-size: $h3-font-size - $h3-font-reduction;
   font-family: "Roboto", Verdana, Geneva, sans-serif;
   font-weight: 500;
@@ -149,13 +149,13 @@ body:not(.single) .site-content .post .entry-title {
 }
 
 @media #{$medium-only} {
-  body:not(.single) .site-content .post .entry-title {
+  .post-listing .entry-title {
     font-size: $h3-font-size - $h3-font-reduction;
   }
 }
 
 @media #{$large-up} {
-  body:not(.single) .site-content .post .entry-title {
+  .post-listing .entry-title {
     font-size: 33.6px;
     line-height: 1.35em;
     padding-top: 20px;

@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'post-listing' ); ?>>
 	<div class="entry-thumbnail">
 		<a href="<?php the_permalink(); ?>">
 			<?php the_post_thumbnail(); ?>
