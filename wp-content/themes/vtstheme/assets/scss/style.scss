@@ -57,6 +57,7 @@ $fa-font-path: 'assets/fonts';
   display: none; // Hides menu
 }
 @import 'modules/post-listing';
+@import 'modules/content-navigation';
 
 
 
@@ -324,54 +325,6 @@ body:not(.single).paged .site-content:before {
   }
 }
 
-
-
-.single .post-navigation {
-  border-top: 2px solid $line4;
-}
-
-.nav-links {
-  padding-top: 1em;
-  text-align: center;
-
-  .nav-previous,
-  .nav-next {
-    display: inline-block;
-
-    a{
-      background: $bg2;
-      padding: 1em 1.5em;
-      display: block;
-      color: $body2;
-      font-size: 1rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-  }
-
-  .nav-next {
-    margin-left: 1em;
-  }
-
-  .nav-arrow {
-    color: $btn;
-  }
-
-  .nav-next .nav-arrow {
-    margin-left: 1em;
-  }
-
-  .nav-previous .nav-arrow {
-    margin-right: 1em;
-  }
-}
-
-@media #{$medium-up} {
-  .nav-links {
-    text-align: right;
-  }
-}
 
 body:not(.home) .yarpp-related {
   background-color: $bg2;

@@ -1,0 +1,54 @@
+.single .post-navigation {
+  border-top: 2px solid $line4;
+}
+
+.nav-links {
+  padding-top: 1em;
+  text-align: center;
+
+  .nav-previous,
+  .nav-next {
+    display: inline-block;
+
+    a {
+      // background: $bg2;
+      border: 1px solid $line3;
+      border-radius: 3px;
+      // padding: 1em 1.5em;
+      color: $body2;
+      display: block;
+      font-size: 1rem;
+      // font-weight: 700;
+      font-weight: 400;
+      padding: 5px 10px;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      border-color: $btn;
+    }
+
+  }
+
+  .nav-next {
+    margin-left: 1em;
+  }
+
+  .nav-arrow {
+    color: $btn;
+  }
+
+  .nav-next .nav-arrow {
+    margin-left: 1em;
+  }
+
+  .nav-previous .nav-arrow {
+    margin-right: 1em;
+  }
+}
+
+@media #{$medium-up} {
+  .nav-links {
+    text-align: right;
+  }
+}

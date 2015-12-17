@@ -17383,6 +17383,17 @@ p {
   font-weight: 500;
 }
 
+.post-listing .entry-meta, .cat-links a {
+  color: #c5cbd4;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 45.7857142857em) {
+  .post-listing .entry-meta, .cat-links a {
+    font-size: 0.9rem;
+  }
+}
+
 a {
   color: #26bce7;
 }
@@ -17734,14 +17745,8 @@ body:not(.home) .site-content {
 }
 
 .post-listing .entry-meta {
-  color: #A4AEBB;
   display: inline-block;
-  font-size: 0.8rem;
   width: 100%;
-}
-
-.post-listing .entry-meta .cat-links, .post-listing .entry-meta .published {
-  padding-bottom: 1em;
 }
 
 .post-listing .entry-meta .published {
@@ -17754,10 +17759,6 @@ body:not(.home) .site-content {
   top: -22.75px;
 }
 
-.cat-links a {
-  color: #A4AEBB;
-}
-
 @media only screen and (min-width: 45.7857142857em) {
   .cat-links {
     padding-left: 5%;
@@ -17766,11 +17767,10 @@ body:not(.home) .site-content {
     top: -3.5em;
   }
   .post-listing .entry-meta {
-    font-size: 0.9rem;
     display: inline-block;
     padding-top: 20px;
   }
-  .post-listing .entry-meta .cat-links, .post-listing .entry-meta .published {
+  .post-listing .entry-meta .published {
     padding-left: 5%;
     padding-bottom: 20px;
     margin-left: -5.2%;
@@ -17835,6 +17835,59 @@ body:not(.home) .site-content {
 
 .entry-footer {
   clear: both;
+}
+
+.single .post-navigation {
+  border-top: 2px solid #ebeff3;
+}
+
+.nav-links {
+  padding-top: 1em;
+  text-align: center;
+}
+
+.nav-links .nav-previous,
+.nav-links .nav-next {
+  display: inline-block;
+}
+
+.nav-links .nav-previous a,
+.nav-links .nav-next a {
+  border: 1px solid #dbe2e7;
+  border-radius: 3px;
+  color: #617085;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+.nav-links .nav-previous a:hover,
+.nav-links .nav-next a:hover {
+  border-color: #26bce7;
+}
+
+.nav-links .nav-next {
+  margin-left: 1em;
+}
+
+.nav-links .nav-arrow {
+  color: #26bce7;
+}
+
+.nav-links .nav-next .nav-arrow {
+  margin-left: 1em;
+}
+
+.nav-links .nav-previous .nav-arrow {
+  margin-right: 1em;
+}
+
+@media only screen and (min-width: 45.7857142857em) {
+  .nav-links {
+    text-align: right;
+  }
 }
 
 .page-title {
@@ -18051,53 +18104,6 @@ body:not(.single).paged .site-content:before {
 
 .single .post .entry-meta .nss-site-name {
   display: none;
-}
-
-.single .post-navigation {
-  border-top: 2px solid #ebeff3;
-}
-
-.nav-links {
-  padding-top: 1em;
-  text-align: center;
-}
-
-.nav-links .nav-previous,
-.nav-links .nav-next {
-  display: inline-block;
-}
-
-.nav-links .nav-previous a,
-.nav-links .nav-next a {
-  background: #f7f7f7;
-  padding: 1em 1.5em;
-  display: block;
-  color: #617085;
-  font-size: 1rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.nav-links .nav-next {
-  margin-left: 1em;
-}
-
-.nav-links .nav-arrow {
-  color: #26bce7;
-}
-
-.nav-links .nav-next .nav-arrow {
-  margin-left: 1em;
-}
-
-.nav-links .nav-previous .nav-arrow {
-  margin-right: 1em;
-}
-
-@media only screen and (min-width: 45.7857142857em) {
-  .nav-links {
-    text-align: right;
-  }
 }
 
 body:not(.home) .yarpp-related {
