@@ -1,0 +1,90 @@
+.yarpp-related {
+  background-color: $bg2;
+  clear: both;
+  margin: 50px 0 0 !important;
+  padding: 50px 2%;
+
+  h3 {
+    color: $body1 !important;
+    font-size: 28px !important;
+    font-weight: 100 !important;
+    text-align: center !important;
+    padding-bottom: 36px !important;
+    text-transform: initial !important;
+  }
+
+  ol {
+    margin: 0 auto;
+    width: 95%;
+  }
+
+  li {
+    border: 1px solid #DEDEDE;
+    padding: 5px;
+    // width: 29%;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 185px;
+    background-color: #fff;
+    // width: 30.333333%;
+    margin: 2% 1.25% 1em;
+    padding: 0;
+  }
+
+  a {
+    font-weight: normal!important;
+  }
+  
+  .post .entry-content {
+    padding: 1em;
+  }
+
+  .post .entry-meta {
+    border-bottom: 1px solid $btn;
+    color: #A4AEBB;
+    display: inline-block;
+    font-size: $paragraph-font-size * .8;
+    padding-bottom: 1em;
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-top: 0;
+  }
+
+  .post .entry-title {
+    font-size: 1em;
+    font-family: "Roboto", Verdana, Geneva, sans-serif;
+    font-weight: 500;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    // border-bottom: 1px solid $line4;
+
+    a {
+      color: $body1;
+    }
+  }
+
+  .post .entry-summary p {
+    margin: 0;
+    // letter-spacing: -0.01em;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: $body1;
+    font-weight: 400;
+  }
+
+  .cat-links {
+    color: #A4AEBB;
+    float: left;
+    font-size: $paragraph-font-size * .8;
+    font-weight: normal;
+    top: -1.6em;
+  }
+}
+
+@media #{$medium-up} {
+  .yarpp-related li {
+    margin: 2% 1.25%;
+    min-height: 475px !important;
+    width: 30.333333%;
+  }
+}

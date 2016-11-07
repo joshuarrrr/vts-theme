@@ -18,7 +18,7 @@ get_header(); ?>
 
 			<?php get_template_part( 'templates/content/content', 'single' ); ?>
 
-			<?php the_post_navigation( ['prev_text' => '<span class="nav-arrow">❬</span> Prev', 'next_text' => 'Next <span class="nav-arrow">❭</span>'] ); ?>
+			<?php /*the_post_navigation( ['prev_text' => '<span class="nav-arrow">❬</span> Prev', 'next_text' => 'Next <span class="nav-arrow">❭</span>'] );*/ ?>
 
 		<?php endwhile; // End of the loop. ?>
 

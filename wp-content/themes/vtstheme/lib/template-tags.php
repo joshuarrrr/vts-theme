@@ -70,10 +70,14 @@ function vtstheme_entry_footer() {
 		// }
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'vtstheme' ) );
-		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'vtstheme' ) . '</span>', $tags_list ); // WPCS: XSS OK.
-		}
+		// $tags_list = get_the_tag_list( '', esc_html__( ', ', 'vtstheme' ) );
+		// if ( $tags_list ) {
+		// 	printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'vtstheme' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+		// }
+
+		the_post_navigation( ['prev_text' => '<i class="fa fa-chevron-left"></i>Prev', 'next_text' => 'Next<i class="fa fa-chevron-right"></i>'] );
+		echo '<a id="share-toggle" class="button secondary share"><i class="fa fa-share"></i> Share</a>';
+		naked_social_share_buttons();
 	}
 
 	// if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {

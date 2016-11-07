@@ -14,7 +14,7 @@
 //
 // Fonts
 //
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,500,500italic,400italic,400,700,700italic,900,900italic);
+// @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,500,500italic,400italic,400,700,700italic,900,900italic);
 $fa-font-path: 'assets/fonts';
 @import 'font-awesome';
 
@@ -57,7 +57,8 @@ $fa-font-path: 'assets/fonts';
   display: none; // Hides menu
 }
 @import 'modules/post-listing';
-@import 'modules/content-navigation';
+@import 'modules/blog-post-footer';
+@import 'modules/related-posts';
 
 
 
@@ -82,7 +83,12 @@ body:not(.single).paged .site-content:before {
 }
 
 .single .entry-content p {
-  font-size: 16px;
+  // font-size: 16px;
+  @extend %paragraph-text-size;
+
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .single .entry-content h2 {
@@ -193,13 +199,14 @@ body:not(.single).paged .site-content:before {
     clear: none;
     float: right;
     // margin-top: 137px;
-    margin-top: 80px;
+    // margin-top: 80px;
+    margin-top: 0;
     width: 32%;
   }
 
-  .single .entry-content p {
-    font-size: 18px;
-  }
+  // .single .entry-content p {
+  //   font-size: 18px;
+  // }
 
   .single .entry-content h2 {
     font-size: rem-calc(28);
@@ -268,142 +275,10 @@ body:not(.single).paged .site-content:before {
 
 
  
-.single .post .entry-meta {
-  // border-bottom: 2px solid $line4;
-  color: $placeholder;
-  display: block;
-  // padding-top: 20px;
-  // padding-bottom: 20px;
-  // padding-bottom: 40px;
-  
-  display: inline-block;
-  vertical-align: middle;
-  width: 100%;
-
-  .share {
-    display: block;
-    margin: 1em 0 0;
-  }
-
-  .naked-social-share {
-    display: none;
-    margin: 1em 0 0;
-    text-align: center;
-
-    li {
-      margin: 0 10px;
-    }
-  }
-
-  @media #{$medium-up} {
-    border-bottom: 2px solid $line4;
-    padding-top: 20px;
-    padding-bottom: 20px;
-
-    .entry-date {
-      line-height: 40px;
-    }
-
-    .share {
-      display: inline-block;
-      float: right;
-      margin: 0;
-    }
-
-    .naked-social-share {
-      float: right;
-      margin: 7px 5px;
-
-      li {
-        margin: 0 5px 0 0;
-      }
-    }
-  }
-
-  .nss-site-name {
-    display: none;
-  }
-}
 
 
-body:not(.home) .yarpp-related {
-  background-color: $bg2;
-  clear: both;
-  margin: 50px 0 0 !important;
-  padding: 50px 2%;
 
-  h3 {
-    color: $body1 !important;
-    font-size: 28px !important;
-    font-weight: 100 !important;
-    text-align: center !important;
-    padding-bottom: 36px !important;
-    text-transform: initial !important;
-  }
 
-  ol {
-    margin: 0 auto;
-    width: 95%;
-  }
-
-  li {
-    border: 1px solid #DEDEDE;
-    padding: 5px;
-    // width: 29%;
-    display: inline-block;
-    vertical-align: top;
-    min-width: 185px;
-    background-color: #fff;
-    // width: 30.333333%;
-    margin: 2% 1.25% 1em;
-    padding: 0;
-  }
-  
-  .post .entry-content {
-    padding: 1em;
-  }
-
-  .post .entry-meta {
-    border-bottom: 1px solid $btn;
-    color: #A4AEBB;
-    display: inline-block;
-    font-size: $paragraph-font-size * .8;
-    padding-bottom: 1em;
-    margin-left: -1rem;
-    padding-left: 1rem;
-    padding-top: 0;
-  }
-
-  .post .entry-title {
-    font-size: 1em;
-    font-family: "Roboto", Verdana, Geneva, sans-serif;
-    font-weight: 500;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border-bottom: 1px solid $line4;
-
-    a {
-      color: $body1;
-    }
-  }
-
-  .post .entry-summary p {
-    margin: 1em 0 0;
-    // letter-spacing: -0.01em;
-    font-size: 12px;
-    line-height: 1.2em;
-    color: $body1;
-    font-weight: 400;
-  }
-}
-
-@media #{$medium-up} {
-  body:not(.home) .yarpp-related li {
-    margin: 2% 1.25%;
-    min-height: 495px !important;
-    width: 30.333333%;
-  }
-}
 
 .search-form {
   width: 94%;

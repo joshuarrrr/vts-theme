@@ -30,6 +30,7 @@ Author: mitcho (Michael Yoshitaka Erlewine)
 
 					<div class="entry-summary">
 						<?php the_excerpt(); ?>
+						<?php vtstheme_posted_in_category(); ?>
 					</div><!-- .entry-summary -->
 				</div>
 			</article><!-- #post-## -->

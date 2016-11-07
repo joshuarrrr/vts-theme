@@ -10,9 +10,9 @@
   width: 100%;
 }
 
-.post-listing:last-of-type {
-  margin-bottom: 0;
-}
+// .post-listing:last-of-type {
+//   margin-bottom: 0;
+// }
 
 @media #{$medium-up} {
   body:not(.single) .site-content:before {

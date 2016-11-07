@@ -1,0 +1,133 @@
+.single .entry-footer {
+  border-top: 2px solid $line4;
+  display: inline-block;
+  padding-top: 1em;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.post-navigation {
+  display: inline-block;
+}
+
+.nav-links {
+  text-align: center;
+
+  .nav-previous,
+  .nav-next {
+    display: inline-block;
+
+    a {
+      // background: $bg2;
+      border: 1px solid $line3;
+      border-radius: 3px;
+      // padding: 1em 1.5em;
+      color: $body2;
+      display: block;
+      font-size: 1rem;
+      // font-weight: 700;
+      font-weight: 400;
+      padding: 5px 10px;
+      text-transform: uppercase;
+    }
+
+    a:hover {
+      border-color: $btn;
+    }
+
+  }
+
+  .nav-next {
+    margin-left: 1em;
+  }
+
+  .fa {
+    color: $btn;
+    vertical-align: middle;
+  }
+
+  .fa-chevron-right {
+    margin-left: 10px;
+  }
+
+  .fa-chevron-left {
+    margin-right: 10px;
+  }
+}
+
+@media #{$medium-up} {
+  .nav-links {
+    text-align: right;
+  }
+}
+
+.single .entry-footer {
+  // // border-bottom: 2px solid $line4;
+  // color: $placeholder;
+  // display: block;
+  // // padding-top: 20px;
+  // // padding-bottom: 20px;
+  // // padding-bottom: 40px;
+  
+  // display: inline-block;
+  // vertical-align: middle;
+  // width: 100%;
+
+  .share {
+    display: block;
+    margin: 1em 0 0;
+  }
+
+  .naked-social-share {
+    display: none;
+    margin: 1em 0 0;
+    text-align: center;
+
+    li {
+      margin: 0 10px;
+    }
+
+    a {
+      border-radius: 3px;
+      padding: 2px 4px;
+    }
+
+    a .fa {
+      // margin: 2px auto;
+      width: 18px;
+    }
+  }
+
+  @media #{$medium-up} {
+    // border-bottom: 2px solid $line4;
+    // padding-top: 20px;
+    // padding-bottom: 20px;
+
+    // .entry-date {
+    //   line-height: 40px;
+    // }
+
+    .share {
+      display: inline-block;
+      float: right;
+      margin: 0;
+    }
+
+    .naked-social-share {
+      float: right;
+      margin: 7px 0 7px 5px;
+
+      li {
+        margin: 0 5px 0 0;
+      }
+
+      li:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .nss-site-name {
+    display: none;
+  }
+}

@@ -14,6 +14,7 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
@@ -52,7 +53,16 @@
 		<?php elseif ( is_single() ) : ?>
 		<div class="splash" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(<?= wp_get_attachment_image_src( get_post_thumbnail_id(), 'full', false )[0] ?>) center/cover;">
 			<div class="site-branding">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+				<?php 
+				global $wp_query;
+				$$post_id = $wp_query->post->ID;
+				$post_author_id = get_post_field( 'post_author', $post_id );
+				?>
+				<?php /* the_title( '<h1 class="entry-title">', '</h1>' ); */ ?>
+				<h1 class="entry-title"><?php echo get_the_title( $$post_id ) ?></h1>
+				<div class="entry-meta">
+					<?php vtstheme_posted_on(); ?> by <?php echo get_the_author_meta('user_firstname', $post_author_id); ?> <?php echo get_the_author_meta('user_lastname', $post_author_id); ?>
+				</div><!-- .entry-meta -->
 			</div>
 			<?php /*the_post_thumbnail( 'full' );*/ ?>
 		</div>

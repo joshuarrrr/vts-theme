@@ -36,7 +36,7 @@
 				<a href="http://vts.com/contact">Contact</a>
 				<a href="http://vts.com/testimonials">Testimonials</a>
 				<a href="http://blog.vts.com" target="_blank">Blog</a>
-				<a href="http://building.vts.com/" target="_blank">Engineering Blog</a>
+				<a href="https://buildingvts.com/" target="_blank">Engineering Blog</a>
 			</div>
 			<div class="footer-support-links">
 				<p>Support &amp; General Questions</p>

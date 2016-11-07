@@ -13,11 +13,11 @@
 	<header class="entry-header">
 		<!-- <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?> -->
 
-		<div class="entry-meta">
+		<!-- <div class="entry-meta">
 			<?php vtstheme_posted_on(); ?> by <?php the_author_meta('user_firstname'); ?> <?php the_author_meta('user_lastname'); ?>
 			<a id="share-toggle" class="button tertiary share"><i class="fa fa-share"></i> Share</a>
 			<?php naked_social_share_buttons(); ?>
-		</div><!-- .entry-meta -->
+		</div> --><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -34,8 +34,8 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<!-- <footer class="entry-footer">
+	<footer class="entry-footer">
 		<?php vtstheme_entry_footer(); ?>
-	</footer> --><!-- .entry-footer -->
+	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 

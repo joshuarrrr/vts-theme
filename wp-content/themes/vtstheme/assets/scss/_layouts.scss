@@ -3,7 +3,7 @@
 }
 
 body:not(.single) .site-content {
-  margin: 50px auto;
+  margin: 30px auto;
   // font: 16px sans-serif;
   overflow: auto;
   width: 94%;
@@ -24,4 +24,10 @@ body:not(.home) .site-content {
   margin: 50px auto;
   overflow: auto;
   width: 90%;
+}
+
+@media #{$medium-up} {
+  body:not(.single) .site-content {
+    margin: 50px auto;
+  }
 }

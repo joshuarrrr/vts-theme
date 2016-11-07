@@ -3,6 +3,14 @@
   font-weight: 400;
 }
 
+%paragraph-text-size {
+  font-size: rem-calc(16);
+
+  @media #{$medium-up} {
+    font-size: rem-calc(18);
+  }
+}
+
 %h2 {
   font-size: 28px;
   font-weight: 100;
